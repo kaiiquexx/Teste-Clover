@@ -1,0 +1,280 @@
+/* font-family: 'Itim', cursive;
+font-family: 'Lobster', cursive; */
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #90f5cb;
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -94%);
+  z-index: 1;
+}
+
+.bkgForm {
+  position: absolute;
+  width: 315px;
+  height: 460px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -45%);
+  z-index: 2;
+  background: #f5dff3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: 2px solid #000;
+}
+
+.bkgForm h1 {
+  font-family: "Lobster", cursive;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 15px;
+
+  color: #000000;
+}
+
+.bkgForm label {
+  font-family: "Lobster", cursive;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  margin-left: 30px;
+
+  color: #000000;
+}
+
+.bkgForm input {
+  width: 258px;
+  height: 31px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 50%;
+  transform: translate(-50%);
+
+  background: #ffffff;
+  border-radius: 30px;
+}
+
+.bkgForm #esqueciSenha {
+  position: absolute;
+  right: 30px;
+  font-family: "Itim";
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.bkgForm #noAccount {
+  display: flex;
+  justify-content: center;
+  font-family: "Itim";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  margin-top: 10px;
+}
+
+.bkgForm .btn-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 169px;
+  height: 34px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+  background-color: #198754;
+  color: #fff;
+  font-size: 17px;
+}
+
+.bkgForm .btn-success:hover {
+  background-color: #157347;
+  border-color: #146c43;
+}
+
+.bkgForm #otherAccount {
+  text-align: center;
+  font-family: "Itim", cursive;
+}
+
+.bkgForm .otherLogins {
+  display: flex;
+  width: 250px;
+  height: 34px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  gap: 40px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.bkgForm .btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #2962ff;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  color: inherit;
+}
+
+.bkgForm .btn-primary:hover{
+    background-color: #174cde;
+}
+
+.bkgForm .btn-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #2962ff;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  color: inherit;
+}
+
+.bkgForm .btn-secondary:hover{
+    background-color: #174cde;
+}
+
+.bkgForm #recaptcha {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #000000;
+}
+
+@media screen and (min-width: 800px) {
+  .logo {
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    scale: 1.2;
+  }
+
+  .bkgForm {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 590px;
+  }
+
+  .bkgForm h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    margin-top: 25px;
+  }
+
+  .bkgForm label {
+    font-size: 23px;
+    margin-left: 45px;
+  }
+
+  .bkgForm input {
+    width: 370px;
+    height: 45px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+
+  .bkgForm #esqueciSenha {
+    right: 45px;
+    margin-top: -5px;
+    font-size: 19px;
+  }
+
+  .bkgForm #noAccount {
+    font-size: 19px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .bkgForm .btn-success {
+    width: 210px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  .bkgForm #otherAccount {
+    font-size: 20px;
+  }
+
+  .bkgForm .otherLogins {
+    width: 350px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  .bkgForm .btn-primary {
+    gap: 20px;
+    font-size: inherit;
+  }
+
+  .bkgForm .btn-secondary {
+    gap: 20px;
+    font-size: inherit;
+  }
+
+  .bkgForm #recaptcha {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .logo {
+    left: 53%;
+    top: 56%;
+  }
+
+  .bkgForm {
+    left: 50%;
+    top: 55%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .logo {
+    left: 53%;
+    top: 61%;
+  }
+
+  .bkgForm {
+    left: 50%;
+    top: 59%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .logo {
+    left: 51.7%;
+    top: 56%;
+  }
+
+  .bkgForm {
+    left: 50%;
+    top: 55%;
+  }
+}
