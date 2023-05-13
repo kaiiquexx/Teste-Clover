@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/cadastro.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="bkgForm">
+      <h1>Cadastre-se abaixo:</h1>
+      <div class="back">
+        <a href="./login.html"><i class="fa fa-arrow-circle-left" aria-hidden="true" style="text-decoration: none; color: #000;"></i></a>
+      </div>
+
+      <form action="#">
+        <div class="containerNames">
+          <div class="subName">
+            <label for="name" class="name">Nome:</label>
+            <br />
+            <input type="text" name="name" id="name" class="name" />
+          </div>
+          <div class="subSobrenome">
+            <label for="sobrenome" class="sobrenome">Sobrenome:</label>
+            <br />
+            <input type="text" name="sobrenome
+            sobrenome" id="sobrenome
+            sobrenome" class="sobrenome
+            sobrenome" />
+          </div>
+        </div>
+        <br>
+        <label for="email" class="labelLeft">Email:</label>
+            <br>
+            <input type="email" name="email" id="email" required maxlength="45" placeholder="exemplo@email.com">
+            <br><br>
+            <label for="password" class="labelLeft">Senha:</label>
+            <br>
+            <input type="password" name="password" id="password" required maxlength="15" minlength="8" placeholder="********">
+            <br><br>
+            <label for="confirmPassword" class="labelLeft">Confirme sua Senha:</label>
+            <br>
+            <input type="password" name="confirmPassword" id="confirmPassword" required maxlength="15" minlength="8" placeholder="********">
+            <br>
+
+
+        <br />
+        <button type="button" class="btn btn-success">Continuar</button>
+        <br />
+        <p id="cadastreAccount">ou cadastre-se com</p>
+        <br />
+        <div class="otherLogins">
+          <button type="button" class="btn btn-primary btn-lg">
+            <i class="fa-brands fa-google"></i>Google
+          </button>
+          <button type="button" class="btn btn-secondary btn-lg">
+            <i class="fa-brands fa-facebook-f"></i>Facebook
+          </button>
+        </div>
+        <br />
+        <p id="recaptcha">Protegido por reCAPTCHA - Privacidade | Condições</p>
+      </form>
+    </div>
+    <div class="logo"><img src="./img/img login/logo.png" alt="" /></div>
+
+    <!-- script -->
+    <script src="./js/login.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
