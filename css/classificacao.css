@@ -68,6 +68,7 @@ header .navMenu .boxPesquisa button {
     border-bottom-right-radius: 10px;
     border: none;
 }
+
 /* fim nav pink */
 
 /* nav menu aberto */
@@ -116,6 +117,7 @@ header .navMenu .boxPesquisa button {
     margin-top: 30px;
     margin-bottom: -1px;
 }
+
 /* fim nav menu aberto */
 
 /* btn modo noturno */
@@ -147,6 +149,7 @@ nav .navList .btnModoNoturno button.activeButton span {
     margin-left: 24.5px;
     background-color: #fff;
 }
+
 /* fim btn modo noturno */
 
 /* text main */
@@ -183,6 +186,7 @@ main .texts .sub {
     color: #000000;
     left: 60px;
 }
+
 /* fim text main */
 
 /* slots */
@@ -192,79 +196,168 @@ main .container {
     height: 900px;
 }
 
-main .container #ranking {
-    position: absolute;
-    font-size: 13px;
-    line-height: 18px;
-    right: 40px;
-    top: -70px;
-}
-
-main .container .classificacao {
-    position: absolute;
-    margin: 10px;
-}
-
-main .container .classificacao .box {
+main .container .accordion {
     position: relative;
-    width: 344px;
-    height: 62px;
+    width: 400px;
     display: flex;
-    padding: 10px;
-    margin-bottom: 20px;
-    transform: translate(0, -50%);
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
 
-    font-family: 'Jost', sans-serif;
+main .container .accordion .contentBx {
+    position: relative;
+    margin: 10px 20px;
+
+    font-family: 'Jost';
     font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    color: #000000;
 }
 
-main .container .classificacao .box p {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-main .container .classificacao .box .nota {
-    position: absolute;
-    right: 50px;
-}
-
-main .container .classificacao .box button {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 20px;
-}
-
-main .container .classificacao .classific1 {
+main .container .accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
     background-color: #F1FFD1;
+    color: #000;
 }
 
-main .container .classificacao .classific2 {
+main .container .accordion .contentBx .bkg2 {
     background-color: #FFDAEC;
 }
 
-main .container .classificacao .lerMais{
-    width: 100%;
-    height: 100%;
+main .container .accordion .contentBx button {
     position: absolute;
-    top: 100%;
+    background: none;
+    border: none;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+main .container .accordion .contentBx button.activeBox {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+main .container .accordion .contentBx #arrowTwo.activeBox {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+main .container .accordion .contentBx #arrowThree.activeBox {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+main .container .accordion .contentBx #arrowFour.activeBox {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+main .container .accordion .contentBx #arrowFive.activeBox {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+main .container .accordion .contentBx #arrowSix.activeBox {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+main .container .accordion .contentBx #arrowSeven.activeBox {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+main .container .accordion .contentBx #arrowEight.activeBox {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+main .container .accordion .contentBx #arrowNine.activeBox {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+main .container .accordion .contentBx #arrowTen.activeBox {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+main .container .accordion .contentBx .content {
+    position: relative;
+    background-color: #FFDAEC;
     display: flex;
-    left: 50%;
-    transform: translate(-50%);
-
-    background-color: #333333;
+    justify-content: space-between;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
 }
 
-main .container .classificacao .lerMais.activeLerMais{
-    display: block;
+main .container .accordion .contentBx .bkg1 {
+    background-color: #F1FFD1;
 }
+
+main .container .accordion .contentBx .box {
+    width: 24%;
+    height: 95%;
+}
+
+main .container .accordion .contentBx .cloverRanking {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #68DD50;
+}
+
+main .container .accordion .contentBx .suaClassificacao {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #68DD50;
+}
+
+main .container .accordion .contentBx .salvar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #68DD50;
+}
+
+main .container .accordion .contentBx .verMaisInformacoes {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #68DD50;
+}
+
+main .container .accordion .contentBx.active .content {
+    height: 150px;
+    padding: 10px;
+}
+
+main .container .classific1 {
+    background-color: #F1FFD1;
+}
+
+main .container .classific2 {
+    background-color: #FFDAEC;
+}
+
+main .container #arrowOne.activeBox {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+main .container #ranking.activeBox {
+    margin-top: 38px;
+}
+
 /* fim slots */
 
 /* ver mais */
@@ -289,6 +382,7 @@ main .container .final button {
     background: none;
     border: none;
 }
+
 /* fim ver mais */
 
 /* rodapé */
@@ -348,4 +442,5 @@ footer .container-footer5 button {
     font-size: 30px;
     color: #fff;
 }
+
 /* fim rodapé */
