@@ -13,6 +13,7 @@ body {
     overflow-x: hidden;
 }
 
+/* nav pink */
 header .navMenu {
     width: 100%;
     height: 130px;
@@ -23,61 +24,7 @@ header .navMenu {
     background-color: #EF41B4;
 }
 
-.navList{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80vw;
-    height: 100%;
-    background-color: #56a143;
-    transform: translateX(-100%);
-    padding-top: 80px;
-    z-index: 1;
-    transition: .1s;
-
-    padding-left: 10px;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-
-.navList.active{
-    transform: translateX(0);
-}
-
-.navList .x{
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    font-size: 40px;
-    display: none;
-    transition: none;
-}
-
-.navList a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.navList li{
-    list-style: none;
-}
-
-.navList p{
-    text-transform: uppercase;
-    margin-top: 30px;
-    margin-bottom: -1px;
-}
-
-.navList .btnModoNoturno{
-    width: 70px;
-    height: 25px;
-    border-radius: 20px;
-
-    background-color: #333333;
-}
-
-header .navMenu .menuMobile {
+header .navMenu button {
     font-size: 35px;
     background: none;
     border: none;
@@ -85,7 +32,8 @@ header .navMenu .menuMobile {
 }
 
 header .navMenu .user {
-    font-size: 35px;
+    display: flex;
+    align-items: center;
 }
 
 header .navMenu .boxPesquisa {
@@ -120,7 +68,88 @@ header .navMenu .boxPesquisa button {
     border-bottom-right-radius: 10px;
     border: none;
 }
+/* fim nav pink */
 
+/* nav menu aberto */
+.navList {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    background-color: #56a143;
+    transform: translateX(-100%);
+    padding-top: 80px;
+    z-index: 1;
+    transition: .1s;
+
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.navList.active {
+    transform: translateX(0);
+}
+
+.navList .x {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 40px;
+    display: none;
+    transition: none;
+}
+
+.navList a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navList li {
+    list-style: none;
+}
+
+.navList p {
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: -1px;
+}
+/* fim nav menu aberto */
+
+/* btn modo noturno */
+nav .navList .btnModoNoturno button {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #717d96;
+}
+
+nav .navList .btnModoNoturno button span {
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin-left: 2px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: margin-left .3s, background-color .3s;
+}
+
+nav .navList .btnModoNoturno button.activeButton {
+    background-color: green;
+}
+
+nav .navList .btnModoNoturno button.activeButton span {
+    margin-left: 24.5px;
+    background-color: #fff;
+}
+/* fim btn modo noturno */
+
+/* text main */
 main .x {
     font-size: 40px;
     margin-left: 10px;
@@ -154,19 +183,21 @@ main .texts .sub {
     color: #000000;
     left: 60px;
 }
+/* fim text main */
 
+/* slots */
 main .container {
     position: relative;
     width: 100%;
     height: 900px;
 }
 
-main .container #ranking{
+main .container #ranking {
     position: absolute;
     font-size: 13px;
     line-height: 18px;
-    top: 0;
-    right: 65px;
+    right: 40px;
+    top: -70px;
 }
 
 main .container .classificacao {
@@ -190,18 +221,18 @@ main .container .classificacao .box {
     color: #000000;
 }
 
-main .container .classificacao .box p{
+main .container .classificacao .box p {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
 }
 
-main .container .classificacao .box .nota{
+main .container .classificacao .box .nota {
     position: absolute;
     right: 50px;
 }
 
-main .container .classificacao .box button{
+main .container .classificacao .box button {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -219,6 +250,24 @@ main .container .classificacao .classific2 {
     background-color: #FFDAEC;
 }
 
+main .container .classificacao .lerMais{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+
+    background-color: #333333;
+}
+
+main .container .classificacao .lerMais.activeLerMais{
+    display: block;
+}
+/* fim slots */
+
+/* ver mais */
 main .container .final {
     position: absolute;
     display: flex;
@@ -230,18 +279,20 @@ main .container .final {
     gap: 10px;
 }
 
-main .container .final #verMais{
+main .container .final #verMais {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
 
-main .container .final button{
+main .container .final button {
     background: none;
     border: none;
-} 
+}
+/* fim ver mais */
 
-footer{
+/* rodapé */
+footer {
     width: 100%;
     height: 350px;
     padding-left: 20px;
@@ -253,16 +304,16 @@ footer{
     background-color: #68DD50;
 }
 
-footer a{
+footer a {
     text-decoration: none;
-    color: #000000; 
+    color: #000000;
 }
 
-footer a:hover{
+footer a:hover {
     text-decoration: underline;
 }
 
-footer .boxFooter{
+footer .boxFooter {
     width: 110px;
     height: 140px;
     display: flex;
@@ -274,7 +325,7 @@ footer .boxFooter{
     color: #ffffff;
 }
 
-footer .container-footer5{
+footer .container-footer5 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -282,7 +333,7 @@ footer .container-footer5{
     flex-wrap: wrap;
 }
 
-footer .container-footer5 button{
+footer .container-footer5 button {
     width: 100px;
     height: 30px;
     background-color: #333333;
@@ -293,7 +344,8 @@ footer .container-footer5 button{
     color: #fff;
 }
 
-.fa-brands{
+.fa-brands {
     font-size: 30px;
     color: #fff;
 }
+/* fim rodapé */
