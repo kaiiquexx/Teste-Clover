@@ -115,6 +115,11 @@ contentTen.addEventListener("click", () =>{
     arrowTen.style.transition = ".3s";
 })
 
+let arrowVerMais = document.querySelector("#arrowVerMais");
+let contentVerMais = document.querySelector('#labelVerMais') ; 
 
-
+contentVerMais.addEventListener("click", () =>{
+    arrowVerMais.classList.toggle("activeBox");
+    arrowVerMais.style.transition = ".3s";
+})
 // fim boxs

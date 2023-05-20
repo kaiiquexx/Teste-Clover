@@ -1,446 +1,432 @@
 /* font-family: 'Jost', sans-serif;
 font-family: 'Montserrat', sans-serif; */
 * {
-    padding: 0;
-    bottom: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  bottom: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(180deg, #68DD50 11%, rgba(193, 255, 183, 0) 21%);
-    background-repeat: no-repeat;
-    overflow-x: hidden;
+  background: linear-gradient(180deg, #68dd50 11%, rgba(193, 255, 183, 0) 21%);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 /* nav pink */
 header .navMenu {
-    width: 100%;
-    height: 130px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px;
-    background-color: #EF41B4;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #ef41b4;
 }
 
 header .navMenu button {
-    font-size: 35px;
-    background: none;
-    border: none;
-    z-index: 2;
+  font-size: 35px;
+  background: none;
+  border: none;
+  z-index: 2;
 }
 
 header .navMenu .user {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header .navMenu .boxPesquisa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 header .navMenu .boxPesquisa input {
-    width: 250px;
-    height: 30px;
-    padding-left: 15px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: none;
+  width: 250px;
+  height: 30px;
+  padding-left: 15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
 }
 
 input:focus {
-    box-shadow: 0 0 0 0;
-    outline: 0;
+  box-shadow: 0 0 0 0;
+  outline: 0;
 }
 
 header .navMenu .boxPesquisa button {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #68DD50;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #68dd50;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
 }
-
 /* fim nav pink */
 
-/* nav menu aberto */
+/* menu Hamburger aberto */
 .navList {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80vw;
-    height: 100vh;
-    background-color: #56a143;
-    transform: translateX(-100%);
-    padding-top: 80px;
-    z-index: 1;
-    transition: .1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  background-color: #56a143;
+  transform: translateX(-100%);
+  padding-top: 80px;
+  z-index: 1;
+  transition: 0.3s;
 
-    padding-left: 10px;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .navList.active {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .navList .x {
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    font-size: 40px;
-    display: none;
-    transition: none;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  font-size: 40px;
+  display: none;
+  transition: none;
 }
 
 .navList a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .navList li {
-    list-style: none;
+  list-style: none;
 }
 
 .navList p {
-    text-transform: uppercase;
-    margin-top: 30px;
-    margin-bottom: -1px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: -1px;
 }
-
-/* fim nav menu aberto */
 
 /* btn modo noturno */
 nav .navList .btnModoNoturno button {
-    display: flex;
-    align-items: center;
-    width: 50px;
-    height: 25px;
-    border-radius: 20px;
-    border: 0;
-    background-color: #717d96;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #717d96;
 }
 
 nav .navList .btnModoNoturno button span {
-    display: block;
-    width: 23px;
-    height: 23px;
-    margin-left: 2px;
-    background-color: #000;
-    border-radius: 50%;
-    transition: margin-left .3s, background-color .3s;
+  display: block;
+  width: 23px;
+  height: 23px;
+  margin-left: 2px;
+  background-color: #000;
+  border-radius: 50%;
+  transition: margin-left 0.3s, background-color 0.3s;
 }
 
 nav .navList .btnModoNoturno button.activeButton {
-    background-color: green;
+  background-color: green;
 }
 
 nav .navList .btnModoNoturno button.activeButton span {
-    margin-left: 24.5px;
-    background-color: #fff;
+  margin-left: 24.5px;
+  background-color: #fff;
 }
-
 /* fim btn modo noturno */
+/* fim menu Hamburger aberto */
 
 /* text main */
 main .x {
-    font-size: 40px;
-    margin-left: 10px;
+  font-size: 40px;
+  margin-left: 10px;
 }
 
 main .texts {
-    position: relative;
-    width: 100%;
-    height: 80px;
+  position: relative;
+  width: 100%;
+  height: 80px;
 }
 
 main .texts .tittle {
-    position: absolute;
-    font-family: 'Jost', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 43px;
-    text-align: center;
-    color: #333333;
-    margin-bottom: 10px;
-    left: 20px;
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 43px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 10px;
+  left: 20px;
 }
 
 main .texts .sub {
-    position: absolute;
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 14px;
-    text-align: center;
-    color: #000000;
-    left: 60px;
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
+  left: 60px;
 }
-
 /* fim text main */
 
 /* slots */
 main .container {
-    position: relative;
-    width: 100%;
-    height: 900px;
+  position: relative;
+  width: 100%;
+  height: 845px;
 }
 
 main .container .accordion {
-    position: relative;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+  position: relative;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 main .container .accordion .contentBx {
-    position: relative;
-    margin: 10px 20px;
+  position: relative;
+  margin: 10px 20px;
 
-    font-family: 'Jost';
-    font-weight: 400;
+  font-family: "Jost";
+  font-weight: 400;
 }
 
 main .container .accordion .contentBx .label {
-    position: relative;
-    padding: 10px;
-    background-color: #F1FFD1;
-    color: #000;
-}
-
-main .container .accordion .contentBx .bkg2 {
-    background-color: #FFDAEC;
+  position: relative;
+  padding: 10px;
+  background-color: #f1ffd1;
+  color: #000;
 }
 
 main .container .accordion .contentBx button {
-    position: absolute;
-    background: none;
-    border: none;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-}
-
-main .container .accordion .contentBx button.activeBox {
-    rotate: 90deg;
-    transition: .3s;
-}
-
-main .container .accordion .contentBx #arrowTwo.activeBox {
-    rotate: 90deg;
-    transition: .3s;
-}
-
-main .container .accordion .contentBx #arrowThree.activeBox {
-    rotate: 90deg;
-    transition: .3s;
-}
-
-main .container .accordion .contentBx #arrowFour.activeBox {
-    rotate: 90deg;
-    transition: .3s;
-}
-
-main .container .accordion .contentBx #arrowFive.activeBox {
-    rotate: 90deg;
-    transition: .3s;
-}
-
-main .container .accordion .contentBx #arrowSix.activeBox {
-    rotate: 90deg;
-    transition: .3s;
-}
-
-main .container .accordion .contentBx #arrowSeven.activeBox {
-    rotate: 90deg;
-    transition: .3s;
-}
-
-main .container .accordion .contentBx #arrowEight.activeBox {
-    rotate: 90deg;
-    transition: .3s;
-}
-
-main .container .accordion .contentBx #arrowNine.activeBox {
-    rotate: 90deg;
-    transition: .3s;
-}
-
-main .container .accordion .contentBx #arrowTen.activeBox {
-    rotate: 90deg;
-    transition: .3s;
-}
-
-main .container .accordion .contentBx .content {
-    position: relative;
-    background-color: #FFDAEC;
-    display: flex;
-    justify-content: space-between;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    overflow-y: auto;
-}
-
-main .container .accordion .contentBx .bkg1 {
-    background-color: #F1FFD1;
+  position: absolute;
+  background: none;
+  border: none;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
 }
 
 main .container .accordion .contentBx .box {
-    width: 24%;
-    height: 95%;
+  width: 24%;
+  height: 95%;
+}
+
+main .container .accordion .contentBx.active .bkg1 {
+    background-color: #f1ffd1;
+}
+
+main .container .accordion .contentBx .bkg2 {
+  background-color: #ffdaec;
+}
+
+main .container .accordion .contentBx .content {
+  position: relative;
+  background-color: #ffdaec;
+  display: flex;
+  justify-content: space-between;
+  height: 0;
+  overflow: hidden;
+  transition: 0.15s;
+  overflow-y: auto;
+}
+
+/* container active */
+main .container .accordion .contentBx.active .content {
+  font-size: 14px;
+  height: 100px;
+  padding: 5px;
 }
 
 main .container .accordion .contentBx .cloverRanking {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #68DD50;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 main .container .accordion .contentBx .suaClassificacao {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #68DD50;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 main .container .accordion .contentBx .salvar {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #68DD50;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 main .container .accordion .contentBx .verMaisInformacoes {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #68DD50;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-main .container .accordion .contentBx.active .content {
-    height: 150px;
-    padding: 10px;
+main .container .accordion .contentBx a {
+  text-decoration: none;
+  color: inherit;
 }
 
-main .container .classific1 {
-    background-color: #F1FFD1;
+main .container .accordion .contentBx a:hover {
+  text-decoration: underline;
 }
 
-main .container .classific2 {
-    background-color: #FFDAEC;
+main .container .accordion .contentBx.active .content .fa-regular {
+  transform: scale(1.4);
 }
 
-main .container #arrowOne.activeBox {
-    rotate: 90deg;
-    transition: .3s;
+/* active arrows */
+main .container .accordion .contentBx #arrowOne.activeBox {
+  rotate: 90deg;
+  transition: 0.3s;
 }
 
-main .container #ranking.activeBox {
-    margin-top: 38px;
+main .container .accordion .contentBx #arrowTwo.activeBox {
+  rotate: 90deg;
+  transition: 0.3s;
 }
 
+main .container .accordion .contentBx #arrowThree.activeBox {
+  rotate: 90deg;
+  transition: 0.3s;
+}
+
+main .container .accordion .contentBx #arrowFour.activeBox {
+  rotate: 90deg;
+  transition: 0.3s;
+}
+
+main .container .accordion .contentBx #arrowFive.activeBox {
+  rotate: 90deg;
+  transition: 0.3s;
+}
+
+main .container .accordion .contentBx #arrowSix.activeBox {
+  rotate: 90deg;
+  transition: 0.3s;
+}
+
+main .container .accordion .contentBx #arrowSeven.activeBox {
+  rotate: 90deg;
+  transition: 0.3s;
+}
+
+main .container .accordion .contentBx #arrowEight.activeBox {
+  rotate: 90deg;
+  transition: 0.3s;
+}
+
+main .container .accordion .contentBx #arrowNine.activeBox {
+  rotate: 90deg;
+  transition: 0.3s;
+}
+
+main .container .accordion .contentBx #arrowTen.activeBox {
+  rotate: 90deg;
+  transition: 0.3s;
+}
+
+main .container .accordion .contentBx #arrowVerMais.activeBox {
+  rotate: 90deg;
+  transition: 0.3s;
+}
+/* fim active arrows */
+/* fim active container */
 /* fim slots */
 
 /* ver mais */
-main .container .final {
-    position: absolute;
-    display: flex;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    bottom: 10px;
-    right: 15px;
-    gap: 10px;
+main .container .accordion .contentBx .labelVerMais {
+  background: none;
+  margin-left: 260px;
 }
 
-main .container .final #verMais {
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+main .container .accordion .contentBx.active .verMais {
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #11690e1e;
 }
-
-main .container .final button {
-    background: none;
-    border: none;
-}
-
 /* fim ver mais */
 
 /* rodapé */
 footer {
-    width: 100%;
-    height: 350px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #68DD50;
+  width: 100%;
+  height: 350px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #68dd50;
 }
 
 footer a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer .boxFooter {
-    width: 110px;
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 5px;
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    color: #ffffff;
+  width: 110px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 footer .container-footer5 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 footer .container-footer5 button {
-    width: 100px;
-    height: 30px;
-    background-color: #333333;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    margin-left: 6px;
-    color: #fff;
+  width: 100px;
+  height: 30px;
+  background-color: #333333;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-left: 6px;
+  color: #fff;
 }
 
 .fa-brands {
-    font-size: 30px;
-    color: #fff;
+  font-size: 30px;
+  color: #fff;
 }
-
 /* fim rodapé */
