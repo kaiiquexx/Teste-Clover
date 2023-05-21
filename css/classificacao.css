@@ -232,7 +232,7 @@ main .container .accordion .contentBx .box {
 }
 
 main .container .accordion .contentBx.active .bkg1 {
-    background-color: #f1ffd1;
+  background-color: #f1ffd1;
 }
 
 main .container .accordion .contentBx .bkg2 {
@@ -430,3 +430,41 @@ footer .container-footer5 button {
   color: #fff;
 }
 /* fim rodapé */
+
+/* modo noturno */
+body.meActive {
+  background: linear-gradient(180deg, #1db100 11%, rgba(193, 255, 183, 0) 21%);
+  background-color: rgb(37, 42, 47);
+}
+
+header .navMenu.meActive {
+  background-color: #a30e71;
+}
+
+header .navMenu .menuMobile.meActive {
+  color: #fff;
+}
+
+header .navMenu .userNoturno.meActive {
+  color: #fff;
+}
+
+header .navMenu .boxPesquisa .pesquisaNoturno.meActive {
+  background-color: #1db100;
+}
+
+.navList.meActive {
+  background-color: rgb(37, 42, 47);;
+}
+
+main .x.meActive{
+  color: #fff;
+}
+
+main .texts .tittle.meActive{
+  color: #fff;
+}
+
+main .texts .sub.meActive{
+  color: #fff;
+}
