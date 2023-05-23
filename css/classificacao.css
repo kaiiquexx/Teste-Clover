@@ -367,6 +367,8 @@ main .container .accordion .contentBx #arrowVerMais.activeBox {
 main .container .accordion .contentBx .labelVerMais {
   background: none;
   margin-left: 260px;
+
+  cursor: pointer;
 }
 
 main .container .accordion .contentBx.active .verMais {
@@ -707,6 +709,196 @@ main .container .accordion .contentBx.active .content .fa-regular {
 main .container .accordion .contentBx .labelVerMais {
   margin-left: 345px;
   font-size: 18px;
+}
+
+main .container .accordion .contentBx.active .verMais {
+  height: 65px;
+}
+/* fim ver mais */
+}
+
+/* media screen */
+@media screen and (min-width: 600px) {
+
+  /* nav pink */
+header .navMenu button {
+  font-size: 45px;
+}
+
+header .navMenu .boxPesquisa input {
+  width: 420px;
+  height: 34px;
+}
+
+header .navMenu .boxPesquisa button {
+  width: 34px;
+  height: 34px;
+}
+
+header .navMenu .boxPesquisa .pesquisa svg{
+  transform: scale(1.3);
+}
+/* fim nav pink */
+
+/* text main */
+main .texts {
+  height: 100px;
+}
+
+main .texts .tittle {
+  left: 50px;
+}
+
+main .texts .sub {
+  left: 110px;
+}
+/* fim text main */
+
+/* slots */
+main .container .accordion {
+  width: 580px;
+}
+/* fim slots */
+
+/* ver mais */
+main .container .accordion .contentBx .labelVerMais {
+  margin-left: 420px;
+}
+/* fim ver mais */
+
+/* rodapé */
+footer {
+  padding-top: 20px;
+}
+
+footer .boxFooter {
+  width: 140px;
+  height: 160px;
+  gap: 2px;
+  font-size: 18px;
+}
+
+footer .container-footer5 button {
+  transform: scale(1.3);
+  margin-left: 17px;
+}
+
+.fa-brands {
+  font-size: 35px;
+}
+/* fim rodapé */
+}
+
+@media screen and (min-width: 720px) {
+
+  /* nav pink */
+
+.logo{
+  transform: scale(1.2);
+}  
+
+header .navMenu button {
+  font-size: 45px;
+}
+
+header .navMenu .boxPesquisa input {
+  width: 500px;
+  height: 38px;
+}
+
+header .navMenu .boxPesquisa button {
+  width: 38px;
+  height: 38px;
+}
+
+header .navMenu .boxPesquisa .pesquisa svg{
+  transform: scale(1.5);
+}
+/* fim nav pink */
+
+/* menu Hamburger aberto */
+.navList {
+  padding-top: 150px;
+  font-size: 30px;
+}
+
+/* btn modo noturno */
+nav .navList .btnModoNoturno button {
+  width: 80px;
+  height: 40px;
+}
+
+nav .navList .btnModoNoturno button span {
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin-left: 4px;
+}
+
+nav .navList .btnModoNoturno button.activeButton span {
+  margin-left: 42px;
+}
+/* fim btn modo noturno */
+/* fim menu Hamburger aberto */
+
+/* text main */
+main .x {
+  font-size: 55px;
+}
+
+main .texts .tittle {
+  left: 50px;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+main .texts .sub {
+  left: 120px;
+  font-size: 18px;
+}
+/* fim text main */
+
+/* slots */
+main .container {
+  height: 1030px;
+}
+
+main .container .accordion {
+  width: 700px;
+}
+
+main .container .accordion .contentBx .label {
+  padding: 16px;
+  font-size: 20px;
+}
+
+main .container .accordion .contentBx button {
+  right: 12px;
+}
+
+main .container .accordion .contentBx .box {
+  width: 23%;
+}
+
+/* container active */
+main .container .accordion .contentBx.active .content {
+  font-size: 17px;
+}
+
+main .container .accordion .contentBx.active .content .fa-regular {
+  transform: scale(1.7);
+}
+/* fim active container */
+/* fim slots */
+
+/* ver mais */
+main .container .accordion .contentBx .labelVerMais {
+  margin-left: 515px;
+  font-size: 22px;
+}
+
+main .container .accordion .contentBx.active .verMais {
+  height: 65px;
 }
 /* fim ver mais */
 }
