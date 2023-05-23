@@ -11,6 +11,7 @@ body {
   background: linear-gradient(180deg, #68dd50 11%, rgba(193, 255, 183, 0) 21%);
   background-repeat: no-repeat;
   overflow-x: hidden;
+  transition: .5s;
 }
 
 /* nav pink */
@@ -107,14 +108,19 @@ header .navMenu .boxPesquisa button {
   color: inherit;
 }
 
+.navList a:hover {
+  text-decoration: underline;
+}
+
 .navList li {
   list-style: none;
 }
 
 .navList p {
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: -1px;
+  color: #f6f6f6;
 }
 
 /* btn modo noturno */
@@ -433,139 +439,274 @@ footer .container-footer5 button {
 
 /* modo noturno */
 body.meActive {
-  background: linear-gradient(180deg, #1db100 11%, rgba(193, 255, 183, 0) 21%);
+  background: linear-gradient(180deg, #5ed347 11%, rgba(193, 255, 183, 0) 21%);
   background-color: rgb(37, 42, 47);
 }
 
+/* header */
 header .navMenu.meActive {
   background-color: #a30e71;
 }
 
 header .navMenu .menuMobile.meActive {
-  color: #d9d9d9;
+  color: #f6f6f6;
 }
 
 header .navMenu .userNoturno.meActive {
-  color: #d9d9d9;
+  color: #f6f6f6;
 }
 
 header .navMenu .boxPesquisa .pesquisaNoturno.meActive {
   background-color: #1db100;
 }
+/* fim header */
 
-.navList.meActive {
-  background-color: rgb(37, 42, 47);;
+/* main */
+main .x.meActive {
+  color: #f6f6f6;
 }
 
-main .x.meActive{
-  color: #d9d9d9;
+main .texts .tittle.meActive {
+  color: #f6f6f6;
 }
 
-main .texts .tittle.meActive{
-  color: #d9d9d9;
+main .texts .sub.meActive {
+  color: #f6f6f6;
 }
 
-main .texts .sub.meActive{
-  color: #d9d9d9;
+/* boxs */
+/* boxs label */
+main .container .accordion .bkgModoEscuro1.meActive {
+  background-color: #829d44;
 }
 
-main .container .accordion .bkgModoEscuro1.meActive{
-  background-color: #a6ca53;
+main .container .accordion .bkgModoEscuro2.meActive {
+  background-color: #c25489;
 }
 
-main .container .accordion .bkgModoEscuro2.meActive{
-  background-color: #f564aa;
+main .container .accordion .bkgModoEscuro3.meActive {
+  background-color: #829d44;
 }
 
-main .container .accordion .bkgModoEscuro3.meActive{
-  background-color: #a6ca53;
+main .container .accordion .bkgModoEscuro4.meActive {
+  background-color: #c25489;
 }
 
-main .container .accordion .bkgModoEscuro4.meActive{
-  background-color: #f564aa;
+main .container .accordion .bkgModoEscuro5.meActive {
+  background-color: #829d44;
 }
 
-main .container .accordion .bkgModoEscuro5.meActive{
-  background-color: #a6ca53;
+main .container .accordion .bkgModoEscuro6.meActive {
+  background-color: #c25489;
 }
 
-main .container .accordion .bkgModoEscuro6.meActive{
-  background-color: #f564aa;
+main .container .accordion .bkgModoEscuro7.meActive {
+  background-color: #829d44;
 }
 
-main .container .accordion .bkgModoEscuro7.meActive{
-  background-color: #a6ca53;
+main .container .accordion .bkgModoEscuro8.meActive {
+  background-color: #c25489;
 }
 
-main .container .accordion .bkgModoEscuro8.meActive{
-  background-color: #f564aa;
+main .container .accordion .bkgModoEscuro9.meActive {
+  background-color: #829d44;
 }
 
-main .container .accordion .bkgModoEscuro9.meActive{
-  background-color: #a6ca53;
+main .container .accordion .bkgModoEscuro10.meActive {
+  background-color: #c25489;
 }
+/* fim boxs label */
 
-main .container .accordion .bkgModoEscuro10.meActive{
-  background-color: #f564aa;
-}
-
+/* boxs open */
 main .container .accordion .contentBx .bkgContent1.meActive {
-  background-color: #a6ca53;
+  background-color: #829d44;
+  color: #000;
 }
 
 main .container .accordion .contentBx .bkgContent2.meActive {
-  background-color: #f564aa;
+  background-color: #c25489;
+  color: #000;
 }
 
 main .container .accordion .contentBx .bkgContent3.meActive {
-  background-color: #a6ca53;
+  background-color: #829d44;
+  color: #000;
 }
 
 main .container .accordion .contentBx .bkgContent4.meActive {
-  background-color: #f564aa;
+  background-color: #c25489;
+  color: #000;
 }
 
 main .container .accordion .contentBx .bkgContent5.meActive {
-  background-color: #a6ca53;
+  background-color: #829d44;
+  color: #000;
 }
 
 main .container .accordion .contentBx .bkgContent6.meActive {
-  background-color: #f564aa;
+  background-color: #c25489;
+  color: #000;
 }
 
 main .container .accordion .contentBx .bkgContent7.meActive {
-  background-color: #a6ca53;
+  background-color: #829d44;
+  color: #000;
 }
 
 main .container .accordion .contentBx .bkgContent8.meActive {
-  background-color: #f564aa;
+  background-color: #aa4877;
+  color: #000;
 }
 
 main .container .accordion .contentBx .bkgContent9.meActive {
-  background-color: #a6ca53;
+  background-color: #829d44;
+  color: #000;
 }
 
 main .container .accordion .contentBx .bkgContent10.meActive {
-  background-color: #f564aa;
+  background-color: #c25489;
+  color: #000;
 }
+/* fim boxs open */
 
+/* ver mais */
 main .container .accordion .contentBx .labelVerMais.meActive {
-  color: #d9d9d9;
+  color: #f6f6f6;
 }
 
 main .container .accordion .contentBx .labelVerMais #arrowVerMais.meActive {
-  color: #d9d9d9;
+  color: #f6f6f6;
 }
 
 main .container .accordion .contentBx .verMais.meActive {
   background-color: #68dd5008;
-  color: #d9d9d9;
+  color: #f6f6f6;
 }
+/* fim ver mais */
+/* fim  boxs */
+/* fim main */
 
-footer.meActive{
+/* rodapé */
+footer.meActive {
   background-color: #4d963e;
 }
+/* fim rodapé */
 
-footer .boxFooter.meActive{
-  color: #d9d9d9;
+/* media screen */
+@media screen and (min-width: 530px) {
+
+  /* nav pink */
+
+header .navMenu button {
+  font-size: 45px;
+}
+
+header .navMenu .boxPesquisa input {
+  width: 300px;
+  height: 32px;
+}
+/* fim nav pink */
+
+/* menu Hamburger aberto */
+.navList {
+  padding-top: 120px;
+  padding-left: 10px;
+  font-size: 27px;
+}
+
+.navList .x {
+  top: 10px;
+  font-size: 55px;
+}
+
+.navList p {
+  margin-top: 40px;
+}
+
+/* btn modo noturno */
+nav .navList .btnModoNoturno button {
+  width: 70px;
+  height: 35px;
+}
+
+nav .navList .btnModoNoturno button span {
+  display: block;
+  width: 29px;
+  height: 29px;
+  margin-left: 3px;
+}
+
+nav .navList .btnModoNoturno button.activeButton {
+  background-color: green;
+}
+
+nav .navList .btnModoNoturno button.activeButton span {
+  margin-left: 38px;
+  background-color: #fff;
+}
+/* fim btn modo noturno */
+/* fim menu Hamburger aberto */
+
+/* text main */
+main .x {
+  font-size: 50px;
+  margin-left: 10px;
+}
+
+main .texts {
+  height: 100px;
+}
+
+main .texts .tittle {
+  left: 40px;
+  font-size: 35px;
+  line-height: 43px;
+  margin-bottom: 15px;
+}
+
+main .texts .sub {
+  left: 100px;
+  font-size: 13px;
+  line-height: 14px;
+}
+/* fim text main */
+
+/* slots */
+main .container {
+  height: 910px;
+}
+
+main .container .accordion {
+  width: 500px;
+}
+
+main .container .accordion .contentBx .label {
+  padding: 13px;
+}
+
+main .container .accordion .contentBx button {
+  right: 12px;
+}
+
+main .container .accordion .contentBx .box {
+  width: 20%;
+}
+
+/* container active */
+main .container .accordion .contentBx.active .content {
+  font-size: 15px;
+}
+
+main .container .accordion .contentBx.active .content .fa-regular {
+  transform: scale(1.5);
+}
+/* fim active container */
+/* fim slots */
+
+/* ver mais */
+main .container .accordion .contentBx .labelVerMais {
+  margin-left: 345px;
+  font-size: 18px;
+}
+/* fim ver mais */
 }
