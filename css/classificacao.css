@@ -442,11 +442,11 @@ header .navMenu.meActive {
 }
 
 header .navMenu .menuMobile.meActive {
-  color: #fff;
+  color: #d9d9d9;
 }
 
 header .navMenu .userNoturno.meActive {
-  color: #fff;
+  color: #d9d9d9;
 }
 
 header .navMenu .boxPesquisa .pesquisaNoturno.meActive {
@@ -458,13 +458,114 @@ header .navMenu .boxPesquisa .pesquisaNoturno.meActive {
 }
 
 main .x.meActive{
-  color: #fff;
+  color: #d9d9d9;
 }
 
 main .texts .tittle.meActive{
-  color: #fff;
+  color: #d9d9d9;
 }
 
 main .texts .sub.meActive{
-  color: #fff;
+  color: #d9d9d9;
+}
+
+main .container .accordion .bkgModoEscuro1.meActive{
+  background-color: #a6ca53;
+}
+
+main .container .accordion .bkgModoEscuro2.meActive{
+  background-color: #f564aa;
+}
+
+main .container .accordion .bkgModoEscuro3.meActive{
+  background-color: #a6ca53;
+}
+
+main .container .accordion .bkgModoEscuro4.meActive{
+  background-color: #f564aa;
+}
+
+main .container .accordion .bkgModoEscuro5.meActive{
+  background-color: #a6ca53;
+}
+
+main .container .accordion .bkgModoEscuro6.meActive{
+  background-color: #f564aa;
+}
+
+main .container .accordion .bkgModoEscuro7.meActive{
+  background-color: #a6ca53;
+}
+
+main .container .accordion .bkgModoEscuro8.meActive{
+  background-color: #f564aa;
+}
+
+main .container .accordion .bkgModoEscuro9.meActive{
+  background-color: #a6ca53;
+}
+
+main .container .accordion .bkgModoEscuro10.meActive{
+  background-color: #f564aa;
+}
+
+main .container .accordion .contentBx .bkgContent1.meActive {
+  background-color: #a6ca53;
+}
+
+main .container .accordion .contentBx .bkgContent2.meActive {
+  background-color: #f564aa;
+}
+
+main .container .accordion .contentBx .bkgContent3.meActive {
+  background-color: #a6ca53;
+}
+
+main .container .accordion .contentBx .bkgContent4.meActive {
+  background-color: #f564aa;
+}
+
+main .container .accordion .contentBx .bkgContent5.meActive {
+  background-color: #a6ca53;
+}
+
+main .container .accordion .contentBx .bkgContent6.meActive {
+  background-color: #f564aa;
+}
+
+main .container .accordion .contentBx .bkgContent7.meActive {
+  background-color: #a6ca53;
+}
+
+main .container .accordion .contentBx .bkgContent8.meActive {
+  background-color: #f564aa;
+}
+
+main .container .accordion .contentBx .bkgContent9.meActive {
+  background-color: #a6ca53;
+}
+
+main .container .accordion .contentBx .bkgContent10.meActive {
+  background-color: #f564aa;
+}
+
+main .container .accordion .contentBx .labelVerMais.meActive {
+  color: #d9d9d9;
+}
+
+main .container .accordion .contentBx .labelVerMais #arrowVerMais.meActive {
+  color: #d9d9d9;
+}
+
+main .container .accordion .contentBx .verMais.meActive {
+  background-color: #68dd5008;
+  color: #d9d9d9;
+}
+
+footer.meActive{
+  background-color: #4d963e;
+}
+
+footer .boxFooter.meActive{
+  color: #d9d9d9;
 }

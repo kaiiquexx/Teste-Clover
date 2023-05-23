@@ -34,6 +34,30 @@ let pesquisa = document.querySelector(".pesquisaNoturno");
 let x = document.querySelector(".xNoturno")
 let textTittle = document.querySelector(".tittle");
 let textSub = document.querySelector(".sub");
+let box1 = document.querySelector(".bkgModoEscuro1");
+let box2 = document.querySelector(".bkgModoEscuro2");
+let box3 = document.querySelector(".bkgModoEscuro3");
+let box4 = document.querySelector(".bkgModoEscuro4");
+let box5 = document.querySelector(".bkgModoEscuro5");
+let box6 = document.querySelector(".bkgModoEscuro6");
+let box7 = document.querySelector(".bkgModoEscuro7");
+let box8 = document.querySelector(".bkgModoEscuro8");
+let box9 = document.querySelector(".bkgModoEscuro9");
+let box10 = document.querySelector(".bkgModoEscuro10");
+let bkgBox1 = document.querySelector('.bkgContent1');
+let bkgBox2 = document.querySelector(".bkgContent2");
+let bkgBox3 = document.querySelector(".bkgContent3");
+let bkgBox4 = document.querySelector(".bkgContent4");
+let bkgBox5 = document.querySelector(".bkgContent5");
+let bkgBox6 = document.querySelector(".bkgContent6");
+let bkgBox7 = document.querySelector(".bkgContent7");
+let bkgBox8 = document.querySelector(".bkgContent8");
+let bkgBox9 = document.querySelector(".bkgContent9");
+let bkgBox10 = document.querySelector(".bkgContent10");
+let verMais = document.querySelector(".labelVerMais");
+let arrowVerMaisCor = document.querySelector("#arrowVerMais");
+let VerMaisOpen = document.querySelector(".verMais");
+let footer = document.querySelector("footer");
 
 btn.addEventListener("click", () =>{
     btn.classList.toggle("activeButton");
@@ -45,6 +69,30 @@ btn.addEventListener("click", () =>{
     x.classList.toggle("meActive");
     textTittle.classList.toggle("meActive");
     textSub.classList.toggle("meActive");
+    box1.classList.toggle("meActive");
+    box2.classList.toggle("meActive");
+    box3.classList.toggle("meActive");
+    box4.classList.toggle("meActive");
+    box5.classList.toggle("meActive");
+    box6.classList.toggle("meActive");
+    box7.classList.toggle("meActive");
+    box8.classList.toggle("meActive");
+    box9.classList.toggle("meActive");
+    box10.classList.toggle("meActive");
+    bkgBox1.classList.toggle("meActive");
+    bkgBox2.classList.toggle("meActive");
+    bkgBox3.classList.toggle("meActive");
+    bkgBox4.classList.toggle("meActive");
+    bkgBox5.classList.toggle("meActive");
+    bkgBox6.classList.toggle("meActive");
+    bkgBox7.classList.toggle("meActive");
+    bkgBox8.classList.toggle("meActive");
+    bkgBox9.classList.toggle("meActive");
+    bkgBox10.classList.toggle("meActive");
+    verMais.classList.toggle("meActive");
+    arrowVerMaisCor.classList.toggle("meActive");
+    VerMaisOpen.classList.toggle("meActive");
+    footer.classList.toggle("meActive");
 })
 // fim btn modo Noturno
 
@@ -52,7 +100,7 @@ btn.addEventListener("click", () =>{
 const accordion = document.querySelectorAll('.contentBx') ; 
 accordion.forEach(acc => {
     acc.addEventListener('click', function(){
-        this.classList.toggle('active'); 
+        this.classList.toggle('active')
     })
 })
 
