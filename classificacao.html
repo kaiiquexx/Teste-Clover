@@ -54,7 +54,17 @@
 
             <div class="logo"><img src="./img/logo-geral.png" alt=""></div>
 
-            <button class="user userNoturno"><i class="fa-solid fa-circle-user"></i></button>
+            <div class="user">
+                <div class="dropdown">
+                    <button class="btn btn-secondary " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle-user userNoturno"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="./cadastro.html">Cadastre-se</a></li>
+                    </ul>
+                </div>
+            </div>
 
             <div class="boxPesquisa">
                 <input type="search" name="search" id="search" maxlength="25">
@@ -84,270 +94,385 @@
 
         <div class="container">
 
-            <div class="accordion">
-
-                <!-- box1 -->
-                <div class="contentBx">
-                    <div class="label bkgModoEscuro1" id="label">1. Eau de Parfum Chanel Número 5
-                        <button type="button"><i class="fa-solid fa-chevron-right" id="arrowOne"></i></button>
-                    </div>
-                    <div class="content bkg1 bkgContent1">
-                        <div class="box cloverRanking">
-                            <p>C´lover Ranking</p>
-                            <p>5.0</p>
-                        </div>
-                        <div class="box suaClassificacao">
-                            <p>Sua classificação</p>
-                            <p><i class="fa-regular fa-star"></i></p>
-                        </div>
-                        <div class="box salvar">
-                            <p>Salvar <br> Item</p>
-                            <p><i class="fa-regular fa-bookmark"></i></p>
-                        </div>
-                        <div class="box verMaisInformacoes">
-                            <a href="#">Ver Mais Informações</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- box1 -->
-
-                <!-- box2 -->
-                <div class="contentBx">
-                    <div class="label bkg2 bkgModoEscuro2" id="labelTwo">2. Bleu de Chanel
-                        <button type="button"><i class="fa-solid fa-chevron-right" id="arrowTwo"></i></button>
-                    </div>
-                    <div class="content bkgContent2">
-                        <div class="box cloverRanking">
-                            <p>C´lover Ranking</p>
-                            <p>5.0</p>
-                        </div>
-                        <div class="box suaClassificacao">
-                            <p>Sua classificação</p>
-                            <p><i class="fa-regular fa-star"></i></p>
-                        </div>
-                        <div class="box salvar">
-                            <p>Salvar <br> Item</p>
-                            <p><i class="fa-regular fa-bookmark"></i></p>
-                        </div>
-                        <div class="box verMaisInformacoes">
-                            <a href="#">Ver Mais Informações</a>
+            <!-- box 1 -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item bkg1">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bkg1 bkgModoEscuro1 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            1. Eau de Parfum Chanel Número 5
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="box">
+                                <p>C´lover Ranking</p>
+                                5.0
+                            </div>
+                            <div class="box">
+                                <p>Sua classificação</p>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-solid fa-star starBlack"></i>
+                            </div>
+                            <div class="box salvar">
+                                <p>Salvar <br> Item</p>
+                                <i class="fa-regular fa-bookmark bookmark"></i>
+                                <i class="fa-solid fa-bookmark bookmarkBlack"></i>
+                            </div>
+                            <div class="box">
+                                <a href="#">Ver Mais Informações</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- box2 -->
+                <!-- box 1 -->
 
-                <!-- box3 -->
-                <div class="contentBx">
-                    <div class="label bkgModoEscuro3" id="labelThree">3. Prada Candy Eau de Parfum
-                        <button type="button"><i class="fa-solid fa-chevron-right" id="arrowThree"></i></button>
-                    </div>
-                    <div class="content bkg1 bkgContent3">
-                        <div class="box cloverRanking">
-                            <p>C´lover Ranking</p>
-                            <p>5.0</p>
-                        </div>
-                        <div class="box suaClassificacao">
-                            <p>Sua classificação</p>
-                            <p><i class="fa-regular fa-star"></i></p>
-                        </div>
-                        <div class="box salvar">
-                            <p>Salvar <br> Item</p>
-                            <p><i class="fa-regular fa-bookmark"></i></p>
-                        </div>
-                        <div class="box verMaisInformacoes">
-                            <a href="#">Ver Mais Informações</a>
+                <br>
+
+                <!-- box 2 -->
+                <div class="accordion-item bkg2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bkg2 bkgModoEscuro2 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            2. Bleu de Chanel
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="box">
+                                <p>C´lover Ranking</p>
+                                5.0
+                            </div>
+                            <div class="box">
+                                <p>Sua classificação</p>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-solid fa-star starBlack"></i>
+                            </div>
+                            <div class="box salvar">
+                                <p>Salvar <br> Item</p>
+                                <i class="fa-regular fa-bookmark bookmark"></i>
+                                <i class="fa-solid fa-bookmark bookmarkBlack"></i>
+                            </div>
+                            <div class="box">
+                                <a href="#">Ver Mais Informações</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- box3 -->
+                <!-- box 2 -->
 
-                <!-- box4 -->
-                <div class="contentBx">
-                    <div class="label bkg2 bkgModoEscuro4" id="labelFour">4. Louis Vuitton Imagination
-                        <button type="button"><i class="fa-solid fa-chevron-right" id="arrowFour"></i></button>
-                    </div>
-                    <div class="content bkgContent4">
-                        <div class="box cloverRanking">
-                            <p>C´lover Ranking</p>
-                            <p>5.0</p>
-                        </div>
-                        <div class="box suaClassificacao">
-                            <p>Sua classificação</p>
-                            <p><i class="fa-regular fa-star"></i></p>
-                        </div>
-                        <div class="box salvar">
-                            <p>Salvar <br> Item</p>
-                            <p><i class="fa-regular fa-bookmark"></i></p>
-                        </div>
-                        <div class="box verMaisInformacoes">
-                            <a href="#">Ver Mais Informações</a>
+                <br>
+
+                <!-- box 3 -->
+                <div class="accordion-item bkg1">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bkg1 bkgModoEscuro3 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            3. Prada Candy Eau de Parfum
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="box">
+                                <p>C´lover Ranking</p>
+                                5.0
+                            </div>
+                            <div class="box">
+                                <p>Sua classificação</p>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-solid fa-star starBlack"></i>
+                            </div>
+                            <div class="box salvar">
+                                <p>Salvar <br> Item</p>
+                                <i class="fa-regular fa-bookmark bookmark"></i>
+                                <i class="fa-solid fa-bookmark bookmarkBlack"></i>
+                            </div>
+                            <div class="box">
+                                <a href="#">Ver Mais Informações</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- box4 -->
+                <!-- box 3 -->
 
-                <!-- box5 -->
-                <div class="contentBx">
-                    <div class="label bkgModoEscuro5" id="labelFive">5. Dior Sauvage Elixir
-                        <button type="button"><i class="fa-solid fa-chevron-right" id="arrowFive"></i></button>
-                    </div>
-                    <div class="content bkg1 bkgContent5">
-                        <div class="box cloverRanking">
-                            <p>C´lover Ranking</p>
-                            <p>5.0</p>
-                        </div>
-                        <div class="box suaClassificacao">
-                            <p>Sua classificação</p>
-                            <p><i class="fa-regular fa-star"></i></p>
-                        </div>
-                        <div class="box salvar">
-                            <p>Salvar <br> Item</p>
-                            <p><i class="fa-regular fa-bookmark"></i></p>
-                        </div>
-                        <div class="box verMaisInformacoes">
-                            <a href="#">Ver Mais Informações</a>
+                <br>
+
+                <!-- box 4 -->
+                <div class="accordion-item bkg2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bkg2 bkgModoEscuro4 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            4. Louis Vuitton Imagination
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="box">
+                                <p>C´lover Ranking</p>
+                                5.0
+                            </div>
+                            <div class="box">
+                                <p>Sua classificação</p>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-solid fa-star starBlack"></i>
+                            </div>
+                            <div class="box salvar">
+                                <p>Salvar <br> Item</p>
+                                <i class="fa-regular fa-bookmark bookmark"></i>
+                                <i class="fa-solid fa-bookmark bookmarkBlack"></i>
+                            </div>
+                            <div class="box">
+                                <a href="#">Ver Mais Informações</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- box5 -->
+                <!-- box 4 -->
 
-                <!-- box6 -->
-                <div class="contentBx">
-                    <div class="label bkg2 bkgModoEscuro6" id="labelSix">6. Florabotanica Balenciaga Parfum
-                        <button type="button"><i class="fa-solid fa-chevron-right" id="arrowSix"></i></button>
-                    </div>
-                    <div class="content bkgContent6">
-                        <div class="box cloverRanking">
-                            <p>C´lover Ranking</p>
-                            <p>5.0</p>
-                        </div>
-                        <div class="box suaClassificacao">
-                            <p>Sua classificação</p>
-                            <p><i class="fa-regular fa-star"></i></p>
-                        </div>
-                        <div class="box salvar">
-                            <p>Salvar <br> Item</p>
-                            <p><i class="fa-regular fa-bookmark"></i></p>
-                        </div>
-                        <div class="box verMaisInformacoes">
-                            <a href="#">Ver Mais Informações</a>
+                <br>
+
+                <!-- box 5 -->
+                <div class="accordion-item bkg1">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bkg1 bkgModoEscuro5 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            5. Dior Sauvage Elixir
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="box">
+                                <p>C´lover Ranking</p>
+                                5.0
+                            </div>
+                            <div class="box">
+                                <p>Sua classificação</p>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-solid fa-star starBlack"></i>
+                            </div>
+                            <div class="box salvar">
+                                <p>Salvar <br> Item</p>
+                                <i class="fa-regular fa-bookmark bookmark"></i>
+                                <i class="fa-solid fa-bookmark bookmarkBlack"></i>
+                            </div>
+                            <div class="box">
+                                <a href="#">Ver Mais Informações</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- box6 -->
+                <!-- box 5 -->
 
-                <!-- box7 -->
-                <div class="contentBx">
-                    <div class="label bkgModoEscuro7" id="labelSeven">7. Paco Rabanne Invictus
-                        <button type="button"><i class="fa-solid fa-chevron-right" id="arrowSeven"></i></button>
-                    </div>
-                    <div class="content bkg1 bkgContent7">
-                        <div class="box cloverRanking">
-                            <p>C´lover Ranking</p>
-                            <p>5.0</p>
-                        </div>
-                        <div class="box suaClassificacao">
-                            <p>Sua classificação</p>
-                            <p><i class="fa-regular fa-star"></i></p>
-                        </div>
-                        <div class="box salvar">
-                            <p>Salvar <br> Item</p>
-                            <p><i class="fa-regular fa-bookmark"></i></p>
-                        </div>
-                        <div class="box verMaisInformacoes">
-                            <a href="#">Ver Mais Informações</a>
+                <br>
+
+                <!-- box 6 -->
+                <div class="accordion-item bkg2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bkg2 bkgModoEscuro6 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            6. Florabotanica Balenciaga Parfum
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="box">
+                                <p>C´lover Ranking</p>
+                                5.0
+                            </div>
+                            <div class="box">
+                                <p>Sua classificação</p>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-solid fa-star starBlack"></i>
+                            </div>
+                            <div class="box salvar">
+                                <p>Salvar <br> Item</p>
+                                <i class="fa-regular fa-bookmark bookmark"></i>
+                                <i class="fa-solid fa-bookmark bookmarkBlack"></i>
+                            </div>
+                            <div class="box">
+                                <a href="#">Ver Mais Informações</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- box7 -->
+                <!-- box 6 -->
 
-                <!-- box8 -->
-                <div class="contentBx">
-                    <div class="label bkg2 bkgModoEscuro8" id="labelEight">8. Givenchy Gentleman Eau Parfum
-                        <button type="button"><i class="fa-solid fa-chevron-right" id="arrowEight"></i></button>
-                    </div>
-                    <div class="content bkgContent8">
-                        <div class="box cloverRanking">
-                            <p>C´lover Ranking</p>
-                            <p>5.0</p>
-                        </div>
-                        <div class="box suaClassificacao">
-                            <p>Sua classificação</p>
-                            <p><i class="fa-regular fa-star"></i></p>
-                        </div>
-                        <div class="box salvar">
-                            <p>Salvar <br> Item</p>
-                            <p><i class="fa-regular fa-bookmark"></i></p>
-                        </div>
-                        <div class="box verMaisInformacoes">
-                            <a href="#">Ver Mais Informações</a>
+                <br>
+
+                <!-- box 7 -->
+                <div class="accordion-item bkg1">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bkg1 bkgModoEscuro7 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                            aria-controls="flush-collapseSeven">
+                            7. Paco Rabanne Invictus
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="box">
+                                <p>C´lover Ranking</p>
+                                5.0
+                            </div>
+                            <div class="box">
+                                <p>Sua classificação</p>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-solid fa-star starBlack"></i>
+                            </div>
+                            <div class="box salvar">
+                                <p>Salvar <br> Item</p>
+                                <i class="fa-regular fa-bookmark bookmark"></i>
+                                <i class="fa-solid fa-bookmark bookmarkBlack"></i>
+                            </div>
+                            <div class="box">
+                                <a href="#">Ver Mais Informações</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- box8 -->
+                <!-- box 7 -->
 
-                <!-- box9 -->
-                <div class="contentBx">
-                    <div class="label bkgModoEscuro9" id="labelNine">9. Paco Rabanne 1 Million Parfum
-                        <button type="button"><i class="fa-solid fa-chevron-right" id="arrowNine"></i></button>
-                    </div>
-                    <div class="content bkg1 bkgContent9">
-                        <div class="box cloverRanking">
-                            <p>C´lover Ranking</p>
-                            <p>5.0</p>
-                        </div>
-                        <div class="box suaClassificacao">
-                            <p>Sua classificação</p>
-                            <p><i class="fa-regular fa-star"></i></p>
-                        </div>
-                        <div class="box salvar">
-                            <p>Salvar <br> Item</p>
-                            <p><i class="fa-regular fa-bookmark"></i></p>
-                        </div>
-                        <div class="box verMaisInformacoes">
-                            <a href="#">Ver Mais Informações</a>
+                <br>
+
+                <!-- box 8 -->
+                <div class="accordion-item bkg2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bkg2 bkgModoEscuro8 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseEight" aria-expanded="false"
+                            aria-controls="flush-collapseEight">
+                            8. Givenchy Gentleman Eau de Parfum
+                        </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="box">
+                                <p>C´lover Ranking</p>
+                                5.0
+                            </div>
+                            <div class="box">
+                                <p>Sua classificação</p>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-solid fa-star starBlack"></i>
+                            </div>
+                            <div class="box salvar">
+                                <p>Salvar <br> Item</p>
+                                <i class="fa-regular fa-bookmark bookmark"></i>
+                                <i class="fa-solid fa-bookmark bookmarkBlack"></i>
+                            </div>
+                            <div class="box">
+                                <a href="#">Ver Mais Informações</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- box9 -->
+                <!-- box 8 -->
 
-                <!-- box10 -->
-                <div class="contentBx">
-                    <div class="label bkg2 bkgModoEscuro10" id="labelTen">10. Carolina Herrera Good Girl
-                        <button type="button"><i class="fa-solid fa-chevron-right" id="arrowTen"></i></button>
-                    </div>
-                    <div class="content bkgContent10">
-                        <div class="box cloverRanking">
-                            <p>C´lover Ranking</p>
-                            <p>5.0</p>
-                        </div>
-                        <div class="box suaClassificacao">
-                            <p>Sua classificação</p>
-                            <p><i class="fa-regular fa-star"></i></p>
-                        </div>
-                        <div class="box salvar">
-                            <p>Salvar <br> Item</p>
-                            <p><i class="fa-regular fa-bookmark"></i></p>
-                        </div>
-                        <div class="box verMaisInformacoes">
-                            <a href="#">Ver Mais Informações</a>
+                <br>
+
+                <!-- box 9 -->
+                <div class="accordion-item bkg1">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bkg1 bkgModoEscuro9 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseNine" aria-expanded="false"
+                            aria-controls="flush-collapseNine">
+                            9. Paco Rabanne 1 Million Parfum
+                        </button>
+                    </h2>
+                    <div id="flush-collapseNine" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="box">
+                                <p>C´lover Ranking</p>
+                                5.0
+                            </div>
+                            <div class="box">
+                                <p>Sua classificação</p>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-solid fa-star starBlack"></i>
+                            </div>
+                            <div class="box salvar">
+                                <p>Salvar <br> Item</p>
+                                <i class="fa-regular fa-bookmark bookmark"></i>
+                                <i class="fa-solid fa-bookmark bookmarkBlack"></i>
+                            </div>
+                            <div class="box">
+                                <a href="#">Ver Mais Informações</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- box10 -->
+                <!-- box 9 -->
 
-                <!-- boxVerMais -->
-                <div class="contentBx">
-                    <div class="label labelVerMais" id="labelVerMais">ver mais
-                        <button type="button"><i class="fa-solid fa-chevron-right" id="arrowVerMais"></i></button>
-                    </div>
-                    <div class="content verMais">
-                        <h6>No Momento Estamos Em Atualizações</h6>
-                        <h6>Novos Produtos Em Breve</h4>
+                <br>
+
+                <!-- box 10 -->
+                <div class="accordion-item bkg2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bkg2 bkgModoEscuro10 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                            10. Carolina Herrera Good Girl Parfum
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTen" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="box">
+                                <p>C´lover Ranking</p>
+                                5.0
+                            </div>
+                            <div class="box">
+                                <p>Sua classificação</p>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-solid fa-star starBlack"></i>
+                            </div>
+                            <div class="box salvar">
+                                <p>Salvar <br> Item</p>
+                                <i class="fa-regular fa-bookmark bookmark"></i>
+                                <i class="fa-solid fa-bookmark bookmarkBlack"></i>
+                            </div>
+                            <div class="box">
+                                <a href="#">Ver Mais Informações</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- boxVerMais -->
+                <!-- box 10 -->
+
+                <br>
+
+                <!-- box VerMais -->
+                <div class="accordion-item labelVerMais">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button verMais collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseElleven" aria-expanded="false"
+                            aria-controls="flush-collapseElleven">
+                            Ver Mais
+                        </button>
+                    </h2>
+                    <div id="flush-collapseElleven" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="verMais">
+                                <h6>Atualizações em Breve</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- box VerMais -->
             </div>
+
+        </div>
 
         </div>
     </main>

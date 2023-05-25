@@ -16,11 +16,11 @@ body {
 
 /* nav pink */
 header .navMenu {
+  position: relative;
   width: 100%;
   height: 130px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding: 10px;
   background-color: #ef41b4;
 }
@@ -31,18 +31,32 @@ header .navMenu button {
   border: none;
   z-index: 2;
   color: #DDF5A9;
+  transition: .2s;
 }
 
-header .navMenu .user {
+header .navMenu .menuMobile {
   display: flex;
-  align-items: center;
+  margin-top: 16px;
+}
+
+header .navMenu .menuMobile:hover {
+  color: #fff;
+}
+
+header .navMenu .user .btn:hover {
+  background: none;
+}
+
+header .navMenu .user .btn:focus {
+  background: none;
 }
 
 header .navMenu .boxPesquisa {
+  position: absolute;
+  margin-bottom: 5px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 header .navMenu .boxPesquisa input {
@@ -70,6 +84,9 @@ header .navMenu .boxPesquisa button {
   border-bottom-right-radius: 10px;
   border: none;
   color: #000;
+}
+header .navMenu .boxPesquisa button:hover {
+  background-color: #58b346;
 }
 /* fim nav pink */
 
@@ -197,188 +214,107 @@ main .texts .sub {
 main .container {
   position: relative;
   width: 100%;
-  height: 845px;
+  height: 1010px;
 }
 
 main .container .accordion {
-  position: relative;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
+  width: 360px;
   padding-top: 50px;
   margin-left: 50%;
   transform: translateX(-50%);
-}
-
-main .container .accordion .contentBx {
-  position: relative;
-  margin: 10px 20px;
-
   font-family: "Jost";
   font-weight: 400;
 }
 
-main .container .accordion .contentBx .label {
-  position: relative;
-  padding: 10px;
-  background-color: #f1ffd1;
-  color: #000;
-}
-
-main .container .accordion .contentBx button {
-  position: absolute;
-  background: none;
-  border: none;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
-
-main .container .accordion .contentBx .box {
-  width: 24%;
-  height: 95%;
-}
-
-main .container .accordion .contentBx.active .bkg1 {
+main .container .accordion .bkg1 {
   background-color: #f1ffd1;
 }
 
-main .container .accordion .contentBx .bkg2 {
+main .container .accordion .bkg2 {
   background-color: #ffdaec;
-}
-
-main .container .accordion .contentBx .content {
-  position: relative;
-  background-color: #ffdaec;
-  display: flex;
-  justify-content: space-between;
-  height: 0;
-  overflow: hidden;
-  transition: 0.15s;
-  overflow-y: auto;
 }
 
 /* container active */
-main .container .accordion .contentBx.active .content {
+main .container .accordion .accordion-item .accordion-collapse .accordion-body {
   font-size: 14px;
-  height: 100px;
-  padding: 5px;
+  height: 130px;
+  gap: 10px;
+  display: flex;
 }
 
-main .container .accordion .contentBx .cloverRanking {
+main .container .accordion .accordion-item .accordion-collapse .accordion-body .box {
+  width: 24%;
+  height: 95%;
+
   display: flex;
   text-align: center;
   justify-content: center;
   flex-direction: column;
 }
 
-main .container .accordion .contentBx .suaClassificacao {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-main .container .accordion .contentBx .salvar {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-main .container .accordion .contentBx .verMaisInformacoes {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-main .container .accordion .contentBx a {
+main .container .accordion a {
   text-decoration: none;
   color: inherit;
 }
 
-main .container .accordion .contentBx a:hover {
+main .container .accordion a:hover {
   text-decoration: underline;
 }
 
-main .container .accordion .contentBx.active .content .fa-regular {
-  transform: scale(1.4);
+main .container .accordion .fa-regular {
+  transform: scale(1.8);
 }
 
-/* active arrows */
-main .container .accordion .contentBx #arrowOne.activeBox {
-  rotate: 90deg;
-  transition: 0.3s;
+main .container .accordion .fa-solid {
+  transform: scale(1.8);
 }
 
-main .container .accordion .contentBx #arrowTwo.activeBox {
-  rotate: 90deg;
-  transition: 0.3s;
+main .container .accordion .bookmark {
+  display: block;
 }
 
-main .container .accordion .contentBx #arrowThree.activeBox {
-  rotate: 90deg;
-  transition: 0.3s;
+main .container .accordion .bookmark.ON {
+  display: none;
 }
 
-main .container .accordion .contentBx #arrowFour.activeBox {
-  rotate: 90deg;
-  transition: 0.3s;
+main .container .accordion .bookmarkBlack {
+  display: none;
 }
 
-main .container .accordion .contentBx #arrowFive.activeBox {
-  rotate: 90deg;
-  transition: 0.3s;
+main .container .accordion .bookmarkBlack.ON {
+  display: block;
 }
 
-main .container .accordion .contentBx #arrowSix.activeBox {
-  rotate: 90deg;
-  transition: 0.3s;
+main .container .accordion .star {
+  display: block;
 }
 
-main .container .accordion .contentBx #arrowSeven.activeBox {
-  rotate: 90deg;
-  transition: 0.3s;
+main .container .accordion .star.ON {
+  display: none;
 }
 
-main .container .accordion .contentBx #arrowEight.activeBox {
-  rotate: 90deg;
-  transition: 0.3s;
+main .container .accordion .starBlack {
+  display: none;
 }
 
-main .container .accordion .contentBx #arrowNine.activeBox {
-  rotate: 90deg;
-  transition: 0.3s;
+main .container .accordion .starBlack.ON {
+  display: block;
 }
-
-main .container .accordion .contentBx #arrowTen.activeBox {
-  rotate: 90deg;
-  transition: 0.3s;
-}
-
-main .container .accordion .contentBx #arrowVerMais.activeBox {
-  rotate: 90deg;
-  transition: 0.3s;
-}
-/* fim active arrows */
 /* fim active container */
 /* fim slots */
 
 /* ver mais */
-main .container .accordion .contentBx .labelVerMais {
+main .container .accordion .labelVerMais {
   background: none;
-  margin-left: 260px;
-
+  width: 140px;
+  margin-left: 220px;
   cursor: pointer;
+  text-align: center;
 }
 
-main .container .accordion .contentBx.active .verMais {
-  height: 55px;
-  display: flex;
-  flex-direction: column;
+main .container .accordion .verMais {
   text-align: center;
-  background-color: #11690e1e;
+  background-color: #ffffff00;
 }
 /* fim ver mais */
 
@@ -479,7 +415,6 @@ main .texts .sub.meActive {
 }
 
 /* boxs */
-/* boxs label */
 main .container .accordion .bkgModoEscuro1.meActive {
   background-color: #829d44;
 }
@@ -519,72 +454,14 @@ main .container .accordion .bkgModoEscuro9.meActive {
 main .container .accordion .bkgModoEscuro10.meActive {
   background-color: #c25489;
 }
-/* fim boxs label */
-
-/* boxs open */
-main .container .accordion .contentBx .bkgContent1.meActive {
-  background-color: #829d44;
-  color: #000;
-}
-
-main .container .accordion .contentBx .bkgContent2.meActive {
-  background-color: #c25489;
-  color: #000;
-}
-
-main .container .accordion .contentBx .bkgContent3.meActive {
-  background-color: #829d44;
-  color: #000;
-}
-
-main .container .accordion .contentBx .bkgContent4.meActive {
-  background-color: #c25489;
-  color: #000;
-}
-
-main .container .accordion .contentBx .bkgContent5.meActive {
-  background-color: #829d44;
-  color: #000;
-}
-
-main .container .accordion .contentBx .bkgContent6.meActive {
-  background-color: #c25489;
-  color: #000;
-}
-
-main .container .accordion .contentBx .bkgContent7.meActive {
-  background-color: #829d44;
-  color: #000;
-}
-
-main .container .accordion .contentBx .bkgContent8.meActive {
-  background-color: #aa4877;
-  color: #000;
-}
-
-main .container .accordion .contentBx .bkgContent9.meActive {
-  background-color: #829d44;
-  color: #000;
-}
-
-main .container .accordion .contentBx .bkgContent10.meActive {
-  background-color: #c25489;
-  color: #000;
-}
-/* fim boxs open */
 
 /* ver mais */
-main .container .accordion .contentBx .labelVerMais.meActive {
-  color: #f6f6f6;
+main .container .accordion .labelVerMais.meActive {
+  background: none;
 }
 
-main .container .accordion .contentBx .labelVerMais #arrowVerMais.meActive {
-  color: #f6f6f6;
-}
-
-main .container .accordion .contentBx .verMais.meActive {
-  background-color: #68dd5008;
-  color: #f6f6f6;
+main .container .accordion .verMais.meActive {
+  background: none;
 }
 /* fim ver mais */
 /* fim  boxs */
@@ -697,11 +574,15 @@ main .container .accordion .contentBx .box {
 }
 
 /* container active */
-main .container .accordion .contentBx.active .content {
+main .container .accordion {
   font-size: 15px;
 }
 
-main .container .accordion .contentBx.active .content .fa-regular {
+main .container .accordion .fa-regular {
+  transform: scale(1.5);
+}
+
+main .container .accordion .fa-solid {
   transform: scale(1.5);
 }
 /* fim active container */
@@ -883,11 +764,15 @@ main .container .accordion .contentBx .box {
 }
 
 /* container active */
-main .container .accordion .contentBx.active .content {
+main .container .accordion {
   font-size: 17px;
 }
 
-main .container .accordion .contentBx.active .content .fa-regular {
+main .container .accordion .fa-regular {
+  transform: scale(1.7);
+}
+
+main .container .accordion .fa-solid {
   transform: scale(1.7);
 }
 /* fim active container */
@@ -1034,11 +919,15 @@ main .container .accordion .contentBx.active .verMais {
   }
 
   /* container active */
-  main .container .accordion .contentBx.active .content {
+  main .container .accordion {
     height: 150px;
   }
   
-  main .container .accordion .contentBx.active .content .fa-regular {
+  main .container .accordion .fa-regular {
+    transform: scale(1.6);
+  }
+
+  main .container .accordion .fa-solid {
     transform: scale(1.6);
   }
   /* fim active container */
