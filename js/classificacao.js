@@ -44,6 +44,16 @@ let box7 = document.querySelector(".bkgModoEscuro7");
 let box8 = document.querySelector(".bkgModoEscuro8");
 let box9 = document.querySelector(".bkgModoEscuro9");
 let box10 = document.querySelector(".bkgModoEscuro10");
+let boxContent1 = document.querySelector(".bkgContentModoEscuro1");
+let boxContent2 = document.querySelector(".bkgContentModoEscuro2");
+let boxContent3 = document.querySelector(".bkgContentModoEscuro3");
+let boxContent4 = document.querySelector(".bkgContentModoEscuro4");
+let boxContent5 = document.querySelector(".bkgContentModoEscuro5");
+let boxContent6 = document.querySelector(".bkgContentModoEscuro6");
+let boxContent7 = document.querySelector(".bkgContentModoEscuro7");
+let boxContent8 = document.querySelector(".bkgContentModoEscuro8");
+let boxContent9 = document.querySelector(".bkgContentModoEscuro9");
+let boxContent10 = document.querySelector(".bkgContentModoEscuro10");
 let verMais = document.querySelector(".labelVerMais");
 let VerMaisOpen = document.querySelector(".verMais");
 let footer = document.querySelector("footer");
@@ -68,6 +78,16 @@ btn.addEventListener("click", () =>{
     box8.classList.toggle("meActive");
     box9.classList.toggle("meActive");
     box10.classList.toggle("meActive");
+    boxContent1.classList.toggle("meActive");
+    boxContent2.classList.toggle("meActive");
+    boxContent3.classList.toggle("meActive");
+    boxContent4.classList.toggle("meActive");
+    boxContent5.classList.toggle("meActive");
+    boxContent6.classList.toggle("meActive");
+    boxContent7.classList.toggle("meActive");
+    boxContent8.classList.toggle("meActive");
+    boxContent9.classList.toggle("meActive");
+    boxContent10.classList.toggle("meActive");
     verMais.classList.toggle("meActive");
     VerMaisOpen.classList.toggle("meActive");
     footer.classList.toggle("meActive");
@@ -77,3 +97,6 @@ btn.addEventListener("click", () =>{
 // boxs
 
 // fim boxs
+
+
+// bookmark

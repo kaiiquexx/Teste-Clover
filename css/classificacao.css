@@ -224,6 +224,7 @@ main .container .accordion {
   transform: translateX(-50%);
   font-family: "Jost";
   font-weight: 400;
+  border: none
 }
 
 main .container .accordion .bkg1 {
@@ -269,6 +270,7 @@ main .container .accordion .fa-solid {
   transform: scale(1.8);
 }
 
+/* bookmarks */
 main .container .accordion .bookmark {
   display: block;
 }
@@ -285,6 +287,7 @@ main .container .accordion .bookmarkBlack.ON {
   display: block;
 }
 
+/* stars */
 main .container .accordion .star {
   display: block;
 }
@@ -455,13 +458,52 @@ main .container .accordion .bkgModoEscuro10.meActive {
   background-color: #c25489;
 }
 
+main .container .accordion .bkgContentModoEscuro1.meActive {
+  background-color: #829d44;
+}
+
+main .container .accordion .bkgContentModoEscuro2.meActive {
+  background-color: #c25489;
+}
+
+main .container .accordion .bkgContentModoEscuro3.meActive {
+  background-color: #829d44;
+}
+
+main .container .accordion .bkgContentModoEscuro4.meActive {
+  background-color: #c25489;
+}
+
+main .container .accordion .bkgContentModoEscuro5.meActive {
+  background-color: #829d44;
+}
+
+main .container .accordion .bkgContentModoEscuro6.meActive {
+  background-color: #c25489;
+}
+
+main .container .accordion .bkgContentModoEscuro7.meActive {
+  background-color: #829d44;
+}
+
+main .container .accordion .bkgContentModoEscuro8.meActive {
+  background-color: #c25489;
+}
+main .container .accordion .bkgContentModoEscuro9.meActive {
+  background-color: #829d44;
+}
+
+main .container .accordion .bkgContentModoEscuro10.meActive {
+  background-color: #c25489;
+}
+
 /* ver mais */
 main .container .accordion .labelVerMais.meActive {
-  background: none;
+  color: #fff;
 }
 
 main .container .accordion .verMais.meActive {
-  background: none;
+  color: #fff;
 }
 /* fim ver mais */
 /* fim  boxs */
@@ -561,15 +603,15 @@ main .container .accordion {
   width: 500px;
 }
 
-main .container .accordion .contentBx .label {
+main .container .accordion  .label {
   padding: 13px;
 }
 
-main .container .accordion .contentBx button {
+main .container .accordion  button {
   right: 12px;
 }
 
-main .container .accordion .contentBx .box {
+main .container .accordion  .box {
   width: 20%;
 }
 
@@ -589,12 +631,12 @@ main .container .accordion .fa-solid {
 /* fim slots */
 
 /* ver mais */
-main .container .accordion .contentBx .labelVerMais {
+main .container .accordion  .labelVerMais {
   margin-left: 345px;
   font-size: 18px;
 }
 
-main .container .accordion .contentBx.active .verMais {
+main .container .accordion .verMais {
   height: 65px;
 }
 /* fim ver mais */
@@ -644,7 +686,7 @@ main .container .accordion {
 /* fim slots */
 
 /* ver mais */
-main .container .accordion .contentBx .labelVerMais {
+main .container .accordion  .labelVerMais {
   margin-left: 420px;
 }
 /* fim ver mais */
@@ -750,19 +792,6 @@ main .container .accordion {
   width: 700px;
 }
 
-main .container .accordion .contentBx .label {
-  padding: 16px;
-  font-size: 20px;
-}
-
-main .container .accordion .contentBx button {
-  right: 12px;
-}
-
-main .container .accordion .contentBx .box {
-  width: 23%;
-}
-
 /* container active */
 main .container .accordion {
   font-size: 17px;
@@ -779,12 +808,12 @@ main .container .accordion .fa-solid {
 /* fim slots */
 
 /* ver mais */
-main .container .accordion .contentBx .labelVerMais {
+main .container .accordion  .labelVerMais {
   margin-left: 515px;
   font-size: 22px;
 }
 
-main .container .accordion .contentBx.active .verMais {
+main .container .accordion .verMais {
   height: 65px;
 }
 /* fim ver mais */
@@ -906,15 +935,15 @@ main .container .accordion .contentBx.active .verMais {
     width: 1200px;
   }
   
-  main .container .accordion .contentBx .label {
+  main .container .accordion .label {
     font-size: 28px;
   }
   
-  main .container .accordion .contentBx button {
+  main .container .accordion button {
     font-size: 30px;
   }
   
-  main .container .accordion .contentBx .box {
+  main .container .accordion .box {
     font-size: 25px;
   }
 
@@ -934,16 +963,16 @@ main .container .accordion .contentBx.active .verMais {
   /* fim slots */
   
   /* ver mais */
-  main .container .accordion .contentBx .labelVerMais {
+  main .container .accordion  .labelVerMais {
     margin-left: 980px;
     font-size: 28px;
   }
   
-  main .container .accordion .contentBx.active .verMais {
+  main .container .accordion .verMais {
     height: 100px;
   }
 
-  main .container .accordion .contentBx.active .verMais h6{
+  main .container .accordion .verMais h6{
     font-size: 30px;
   }
   /* fim ver mais */
