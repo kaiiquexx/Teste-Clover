@@ -7,16 +7,6 @@ font-family: 'Montserrat', sans-serif; */
     box-sizing: border-box;
 }
 
-header .options {
-    display: flex;
-    margin: 20px;
-}
-
-header .menuMobile {
-    font-size: 35px;
-    cursor: pointer;
-}
-
 header .tittle {
     font-family: 'Jost', sans-serif;
     font-weight: 700;
@@ -26,9 +16,11 @@ header .tittle {
     margin-top: 50px;
 }
 
-header .x {
+header .xNoturno {
     font-size: 45px;
     cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: -40px;
 }
 
 main .text {
@@ -108,6 +100,27 @@ main .question .btns .no:hover {
     color: #fff;
 }
 
+/* modo escuro */
+header .xNoturno.meActive {
+    color: #fff;
+}
+
+header .tittle.meActive{
+    color: #fff;
+}
+
+main .text.meActive {
+    color: #fff;
+}
+
+main .line.meActive{
+    background-color: #fff;
+}
+
+main .question p.meActive{
+    color: #fff;
+}
+
 @media screen and (min-width: 600px) {
     main .line {
         width: 94.5%;
@@ -116,21 +129,14 @@ main .question .btns .no:hover {
 
 @media screen and (min-width: 800px) {
 
-    header .options {
-        margin: 30px;
-    }
-
-    header .menuMobile {
-        font-size: 45px;
-    }
-
     header .tittle {
         font-size: 18px;
         margin-top: 10px;
     }
 
-    header .x {
+    header .xNoturno {
         font-size: 55px;
+        margin-bottom: 0;
     }
 
     main .text {
@@ -169,21 +175,12 @@ main .question .btns .no:hover {
 
 @media screen and (min-width: 1280px) {
 
-    header .options {
-        margin: 30px;
-        justify-content: space-between;
-    }
-
-    header .menuMobile {
-        font-size: 50px;
-    }
-
     header .tittle {
         font-size: 20px;
         margin-top: 15px;
     }
 
-    header .x {
+    header .xxNoturno {
         font-size: 60px;
     }
 

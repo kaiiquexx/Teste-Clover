@@ -1,0 +1,528 @@
+/* font-family: 'Jost', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+* {
+    padding: 0;
+    bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* nav pink */
+header .navMenu {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ef41b4;
+}
+
+header .navMenu button {
+    font-size: 35px;
+    background: none;
+    border: none;
+    z-index: 2;
+    color: #DDF5A9;
+    transition: .2s;
+}
+
+header .navMenu .menuMobile {
+    display: flex;
+    margin-top: 16px;
+}
+
+header .navMenu .menuMobile:hover {
+    color: #fff;
+}
+
+header .navMenu .user .btn:hover {
+    background: none;
+}
+
+header .navMenu .user .btn:focus {
+    background: none;
+}
+
+header .navMenu .boxPesquisa {
+    position: absolute;
+    margin-bottom: 5px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .navMenu .boxPesquisa input {
+    width: 250px;
+    height: 30px;
+    padding-left: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+header .navMenu .boxPesquisa button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #68dd50;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    color: #000;
+}
+
+header .navMenu .boxPesquisa button:hover {
+    background-color: #58b346;
+}
+/* fim nav pink */
+
+/* menu Hamburger aberto */
+.navList {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    background-color: #56a143;
+    transform: translateX(-100%);
+    padding-top: 80px;
+    z-index: 1;
+    transition: 0.3s;
+
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.navList.active {
+    transform: translateX(0);
+}
+
+.navList .x {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 40px;
+    display: none;
+    transition: none;
+}
+
+.navList a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navList a:hover {
+    text-decoration: underline;
+}
+
+.navList li {
+    list-style: none;
+}
+
+.navList p {
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: -1px;
+    color: #f6f6f6;
+}
+
+/* btn modo noturno */
+nav .navList .btnModoNoturno button {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #717d96;
+}
+
+nav .navList .btnModoNoturno button span {
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin-left: 2px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: margin-left 0.3s, background-color 0.3s;
+}
+
+nav .navList .btnModoNoturno button.activeButton {
+    background-color: green;
+}
+
+nav .navList .btnModoNoturno button.activeButton span {
+    margin-left: 24.5px;
+    background-color: #fff;
+}
+/* fim btn modo noturno */
+/* fim menu Hamburger aberto */
+
+/* rodapé */
+footer {
+    width: 100%;
+    height: 350px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #68dd50;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .boxFooter {
+    width: 110px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+footer .container-footer5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .container-footer5 button {
+    width: 100px;
+    height: 30px;
+    background-color: #333333;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-left: 6px;
+    color: #fff;
+}
+
+.fa-brands {
+    font-size: 30px;
+    color: #fff;
+}
+/* fim rodapé */
+
+/* modo Escuro */
+body.meActive {
+    background-color: rgb(37, 42, 47);
+}
+/* header */
+header .navMenu.meActive {
+    background-color: #a30e71;
+}
+
+header .navMenu .menuMobile.meActive {
+    color: #f6f6f6;
+}
+
+header .navMenu .userNoturno.meActive {
+    color: #f6f6f6;
+}
+
+header .navMenu .boxPesquisa .pesquisaNoturno.meActive {
+    background-color: #1db100;
+}
+/* fim header */
+
+/* rodapé */
+footer.meActive {
+    background-color: #4d963e;
+}
+
+/* fim rodapé */
+
+
+/* media screen */
+@media screen and (min-width: 530px) {
+
+    /* nav pink */
+    header .navMenu button {
+        font-size: 45px;
+    }
+
+    header .navMenu .boxPesquisa input {
+        width: 300px;
+        height: 32px;
+    }
+
+    /* fim nav pink */
+
+    /* menu Hamburger aberto */
+    .navList {
+        padding-top: 120px;
+        padding-left: 10px;
+        font-size: 27px;
+    }
+
+    .navList .x {
+        top: 10px;
+        font-size: 55px;
+    }
+
+    .navList p {
+        margin-top: 40px;
+    }
+
+    /* btn modo noturno */
+    nav .navList .btnModoNoturno button {
+        width: 70px;
+        height: 35px;
+    }
+
+    nav .navList .btnModoNoturno button span {
+        display: block;
+        width: 29px;
+        height: 29px;
+        margin-left: 3px;
+    }
+
+    nav .navList .btnModoNoturno button.activeButton {
+        background-color: green;
+    }
+
+    nav .navList .btnModoNoturno button.activeButton span {
+        margin-left: 38px;
+        background-color: #fff;
+    }
+
+    /* fim btn modo noturno */
+    /* fim menu Hamburger aberto */
+}
+
+/* media screen */
+@media screen and (min-width: 600px) {
+
+    /* nav pink */
+    header .navMenu button {
+        font-size: 45px;
+    }
+
+    header .navMenu .boxPesquisa input {
+        width: 420px;
+        height: 34px;
+    }
+
+    header .navMenu .boxPesquisa button {
+        width: 34px;
+        height: 34px;
+    }
+
+    header .navMenu .boxPesquisa .pesquisa svg {
+        transform: scale(1.3);
+    }
+    /* fim nav pink */
+
+    /* rodapé */
+    footer {
+        padding-top: 20px;
+    }
+
+    footer .boxFooter {
+        width: 140px;
+        height: 160px;
+        gap: 2px;
+        font-size: 18px;
+    }
+
+    footer .container-footer5 button {
+        transform: scale(1.3);
+        margin-left: 17px;
+    }
+
+    .fa-brands {
+        font-size: 35px;
+    }
+    /* fim rodapé */
+}
+
+@media screen and (min-width: 720px) {
+
+    /* nav pink */
+    .logo {
+        transform: scale(1.2);
+    }
+
+    header .navMenu button {
+        font-size: 45px;
+    }
+
+    header .navMenu .boxPesquisa input {
+        width: 500px;
+        height: 38px;
+    }
+
+    header .navMenu .boxPesquisa button {
+        width: 38px;
+        height: 38px;
+    }
+
+    header .navMenu .boxPesquisa .pesquisa svg {
+        transform: scale(1.5);
+    }
+    /* fim nav pink */
+
+    /* menu Hamburger aberto */
+    .navList {
+        padding-top: 150px;
+        font-size: 30px;
+    }
+
+    /* btn modo noturno */
+    nav .navList .btnModoNoturno button {
+        width: 80px;
+        height: 40px;
+    }
+
+    nav .navList .btnModoNoturno button span {
+        display: block;
+        width: 34px;
+        height: 34px;
+        margin-left: 4px;
+    }
+
+    nav .navList .btnModoNoturno button.activeButton span {
+        margin-left: 42px;
+    }
+    /* fim btn modo noturno */
+    /* fim menu Hamburger aberto */
+}
+
+@media screen and (min-width: 1280px) {
+
+    /* nav pink */
+    header .navMenu {
+        position: relative;
+        width: 100%;
+        height: 160px;
+        display: flex;
+    }
+
+    header .navMenu button {
+        font-size: 50px;
+    }
+
+    header .navMenu .logo {
+        scale: 1.6;
+        position: absolute;
+        left: 50%;
+        top: 40px;
+        transform: translate(-50%, 0);
+    }
+
+    header .navMenu .user {
+        position: absolute;
+        right: 10px;
+        top: 0px;
+    }
+
+    header .navMenu .menuMobile {
+        position: absolute;
+        left: 10px;
+        top: 0px;
+    }
+
+    header .navMenu .boxPesquisa {
+        margin-top: 90px;
+    }
+
+    header .navMenu .boxPesquisa input {
+        width: 700px;
+        height: 48px;
+    }
+
+    header .navMenu .boxPesquisa button {
+        width: 48px;
+        height: 48px;
+    }
+
+    header .navMenu .boxPesquisa .pesquisa svg {
+        transform: scale(1.8);
+    }
+    /* fim nav pink */
+
+    /* menu Hamburger aberto */
+    .navList {
+        width: 45vw;
+        height: 100vh;
+        padding-top: 120px;
+
+        padding-left: 10px;
+        font-size: 23px;
+    }
+
+    .navList .x {
+        top: 15px;
+        font-size: 60px;
+    }
+
+    /* btn modo noturno */
+    nav .navList .btnModoNoturno button {
+        width: 90px;
+        height: 40px;
+    }
+
+    nav .navList .btnModoNoturno button span {
+        width: 35px;
+        height: 35px;
+        margin-left: 4px;
+    }
+
+    nav .navList .btnModoNoturno button.activeButton span {
+        margin-left: 50px;
+        background-color: #fff;
+    }
+    /* fim btn modo noturno */
+    /* fim menu Hamburger aberto */
+
+    /* rodapé */
+    footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    footer .boxFooter {
+        width: 180px;
+        height: 200px;
+        font-size: 25px;
+    }
+
+    footer .boxFooter h5 {
+        font-size: 30px;
+    }
+
+    footer .container-footer5 button {
+        margin-left: 40px;
+        transform: scale(1.6);
+        font-size: 18px;
+    }
+
+    .fa-brands {
+        font-size: 50px;
+    }
+    /* fim rodapé */
+}
