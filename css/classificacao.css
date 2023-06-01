@@ -46,7 +46,7 @@ main .texts .sub {
   line-height: 14px;
   text-align: center;
   color: #000000;
-  left: 60px;
+  left: 40px;
 }
 /* fim text main */
 
@@ -114,180 +114,220 @@ main .container .accordion .fa-solid {
 /* box1 */
 main .container .accordion #bookmark1 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmark1.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack1 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack1.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box1 */
 
 /* box2 */
 main .container .accordion #bookmark2 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmark2.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack2 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack2.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box2 */
 
 /* box3 */
 main .container .accordion #bookmark3 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmark3.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack3 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack3.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box3 */
 
 /* box4 */
 main .container .accordion #bookmark4 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmark4.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack4 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack4.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box4 */
 
 /* box5 */
 main .container .accordion #bookmark5 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmark5.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack5 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack5.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box5 */
 
 /* box6 */
 main .container .accordion #bookmark6 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmark6.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack6 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack6.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box6 */
 
 /* box7 */
 main .container .accordion #bookmark7 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmark7.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack7 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack7.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box7 */
 
 /* box8 */
 main .container .accordion #bookmark8 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmark8.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack8 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack8.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box8 */
 
 /* box9 */
 main .container .accordion #bookmark9 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmark9.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack9 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack9.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box9 */
 
 /* box10 */
 main .container .accordion #bookmark10 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmark10.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack10 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #bookmarkBlack10.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box10 */
 
@@ -296,180 +336,220 @@ main .container .accordion #bookmarkBlack10.ON {
 /* box1 */
 main .container .accordion #star1 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #star1.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack1 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack1.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box1 */
 
 /* box2 */
 main .container .accordion #star2 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #star2.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack2 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack2.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box2 */
 
 /* box3 */
 main .container .accordion #star3 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #star3.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack3 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack3.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box3 */
 
 /* box4 */
 main .container .accordion #star4 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #star4.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack4 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack4.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box4 */
 
 /* box5 */
 main .container .accordion #star5 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #star5.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack5 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack5.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box5 */
 
 /* box6 */
 main .container .accordion #star6 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #star6.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack6 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack6.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box6 */
 
 /* box7 */
 main .container .accordion #star7 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #star7.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack7 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack7.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box7 */
 
 /* box8 */
 main .container .accordion #star8 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #star8.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack8 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack8.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box8 */
 
 /* box9 */
 main .container .accordion #star9 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #star9.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack9 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack9.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box9 */
 
 /* box10 */
 main .container .accordion #star10 {
   display: block;
+  cursor: pointer;
 }
 
 main .container .accordion #star10.ON {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack10 {
   display: none;
+  cursor: pointer;
 }
 
 main .container .accordion #starBlack10.ON {
   display: block;
+  cursor: pointer;
 }
 /* fim box10 */
 /* fim active container */

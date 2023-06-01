@@ -1,4 +1,6 @@
 // btn modoNoturno
+let x = document.querySelector(".xNoturno");
+let text = document.querySelector(".tittle");
 let textSub = document.querySelector(".sub");
 let box1 = document.querySelector(".bkgModoEscuro1");
 let box2 = document.querySelector(".bkgModoEscuro2");
@@ -24,6 +26,8 @@ let verMais = document.querySelector(".labelVerMais");
 let VerMaisOpen = document.querySelector(".verMais");
 
 btn.addEventListener("click", () =>{
+    x.classList.toggle("meActive");
+    text.classList.toggle("meActive");
     textSub.classList.toggle("meActive");
     box1.classList.toggle("meActive");
     box2.classList.toggle("meActive");
