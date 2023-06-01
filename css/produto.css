@@ -1,0 +1,101 @@
+/* font-family: 'Jost', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+* {
+    padding: 0;
+    bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header .navMenu {
+    margin-bottom: 10px;
+}
+/* fim header */
+
+/* main */
+main .carrossel .carousel {
+    width: 95vw;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: rgba(221, 200, 85, 0.451);
+}
+
+main .nameAndClassific{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+}
+
+main .nameAndClassific .fa-heart{
+    transform: scale(1.8);
+}
+
+main .line{
+    width: 95vw;
+    height: 2px;
+    border-radius: 50px;
+    background-color: #000;
+    margin: 10px auto;
+}
+
+main .texts{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main .texts h1{
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+}
+
+main .texts p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+main .texts .comprar .logo{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+main .texts .comprar a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* salvar */
+#heart{
+    display: block;
+}
+#heartBlack{
+    display: none;
+}
+#heart.ON{
+    display: none;
+}
+#heartBlack.ON{
+    display: block;
+}
+/* fim salvar */
+/* fim main */
+
+/* modo escuro */
+main .nameAndClassific.meActive{
+    color: #f6f6f6;
+}
+
+main .line.meActive{
+    background-color: #f6f6f6;
+}
+
+main .texts.meActive{
+    color: #f6f6f6;
+}

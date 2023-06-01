@@ -7,7 +7,8 @@ function toggleBar() {
 
     if (toggleBar.className === "navList") {
         toggleBar.classList.add("active");
-        toggleBar.style.zIndex = "1";
+        toggleBar.style.zIndex = "4";
+        menuMobile.style.zIndex = "5";
         x.style.display = "block";
         document.body.style.overflow = "hidden";
         menuMobile.style.opacity = "0";
@@ -16,6 +17,7 @@ function toggleBar() {
     else {
         toggleBar.classList.remove("active");
         toggleBar.style.zIndex = "4";
+        menuMobile.style.zIndex = "1";
         x.style.display = "inherit"
         document.body.style.overflow = "inherit";
         menuMobile.style.opacity = "1";
