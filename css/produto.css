@@ -7,6 +7,10 @@ font-family: 'Montserrat', sans-serif; */
     box-sizing: border-box;
 }
 
+body{
+    transition: .3s ;
+}
+
 /* header */
 header .navMenu {
     margin-bottom: 10px;
@@ -60,10 +64,15 @@ main .texts p{
 }
 
 main .texts .comprar .logo{
-    width: 50vw;
+    width: 230px;
     display: flex;
     align-items: center;
     border: 1px solid #000;
+}
+
+main .texts .comprar .logo h1{
+    width: 120px;
+    text-align: center;
 }
 
 main .texts .comprar a{
@@ -85,6 +94,35 @@ main .texts .comprar a{
     display: block;
 }
 /* fim salvar */
+
+/* stars */
+main .avaliacao{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    margin-bottom: 20px;
+}
+
+.starIcon{
+    list-style: none;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 50px;
+    margin-left: -33px;
+}
+
+.starIcon::before{
+    content: "\2605";
+}
+
+.starIcon.active ~ .starIcon::before{
+    content: "\2606";
+}
+
+
+/* fim stars */
 /* fim main */
 
 /* modo escuro */
@@ -98,4 +136,15 @@ main .line.meActive{
 
 main .texts.meActive{
     color: #f6f6f6;
+}
+
+@media screen and (min-width: 800px) {
+
+    main .nameAndClassific{
+        padding: 0 38px 0 38px;
+    }
+
+    main .texts .comprar .logo{
+        margin: 20px 0 0 20px;
+    }
 }

@@ -25,3 +25,17 @@ btn.addEventListener("click", () =>{
         escuro[i].classList.toggle("meActive");
     }
 })
+
+// avaliação
+let stars = document.querySelectorAll(".starIcon");
+
+document.addEventListener("click", function(e){
+    let classStar = e.target.classList;
+    if(!classStar.contains('active')){
+        stars.forEach(function(star){
+            star.classList.remove('active')
+        });
+        classStar.add("active");
+        console.log(e.target.getAttribute("data-avaliacao"));
+    }
+})
