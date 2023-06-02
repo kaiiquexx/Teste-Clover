@@ -67,6 +67,30 @@ body {
 
   background: #ffffff;
   border-radius: 30px;
+  font-family: 'Itim', cursive;
+}
+
+.bkgForm .eye{
+  position: absolute;
+  right: 40px;
+  margin-top: -23px;
+  cursor: pointer;
+}
+
+.bkgForm #ver{
+  display: block;
+}
+
+.bkgForm #desver{
+  display: none;
+}
+
+.bkgForm #ver.eyeActive{
+  display: none;
+}
+
+.bkgForm #desver.eyeActive{
+  display: block;
 }
 
 .bkgForm #esqueciSenha {
@@ -89,23 +113,29 @@ body {
   margin-top: 10px;
 }
 
+.bkgForm .continuar{
+  display: flex;
+  justify-content: center;
+}
+
 .bkgForm .btn-success {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 169px;
   height: 34px;
-  margin-left: 50%;
-  transform: translate(-50%);
   border-radius: 10px;
   background-color: #198754;
   color: #fff;
   font-size: 17px;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .bkgForm .btn-success:hover {
   background-color: #157347;
   border-color: #146c43;
+  scale: 1.02;
 }
 
 .bkgForm #otherAccount {
@@ -134,10 +164,13 @@ body {
   height: inherit;
   border-radius: inherit;
   color: inherit;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .bkgForm .btn-primary:hover{
     background-color: #174cde;
+    scale: 1.02;
 }
 
 .bkgForm .btn-secondary {
@@ -150,10 +183,13 @@ body {
   height: inherit;
   border-radius: inherit;
   color: inherit;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .bkgForm .btn-secondary:hover{
     background-color: #174cde;
+    scale: 1.02;
 }
 
 .bkgForm #recaptcha {

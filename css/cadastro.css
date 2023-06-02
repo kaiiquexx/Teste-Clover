@@ -84,10 +84,62 @@ body {
 
   background: #ffffff;
   border-radius: 30px;
+  font-family: 'Itim', cursive;
+}
+
+.bkgForm .eye{
+  position: absolute;
+  right: 40px;
+  margin-top: -23px;
+  cursor: pointer;
+}
+
+.bkgForm .eye2{
+  position: absolute;
+  right: 40px;
+  margin-top: -23px;
+  cursor: pointer;
+}
+
+.bkgForm #ver1{
+  display: block;
+}
+
+.bkgForm #desver1{
+  display: none;
+}
+
+.bkgForm #ver1.eyeActive{
+  display: none;
+}
+
+.bkgForm #desver1.eyeActive{
+  display: block;
+}
+
+.bkgForm #ver2{
+  display: block;
+}
+
+.bkgForm #desver2{
+  display: none;
+}
+
+.bkgForm #ver2.eyeActive{
+  display: none;
+}
+
+.bkgForm #desver2.eyeActive{
+  display: block;
 }
 
 .bkgForm .labelLeft{
   margin-left: 30px;
+}
+
+.bkgForm .continuar{
+  display: flex;
+  justify-content: center;
 }
 
 .bkgForm .btn-success {
@@ -96,17 +148,18 @@ body {
   align-items: center;
   width: 169px;
   height: 34px;
-  margin-left: 50%;
-  transform: translate(-50%);
   border-radius: 10px;
   background-color: #198754;
   color: #fff;
   font-size: 17px;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .bkgForm .btn-success:hover {
   background-color: #157347;
   border-color: #146c43;
+  scale: 1.02;
 }
 
 .bkgForm #cadastreAccount {
@@ -135,10 +188,13 @@ body {
   height: inherit;
   border-radius: inherit;
   color: inherit;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .bkgForm .btn-primary:hover {
   background-color: #174cde;
+  scale: 1.02;
 }
 
 .bkgForm .btn-secondary {
@@ -151,10 +207,13 @@ body {
   height: inherit;
   border-radius: inherit;
   color: inherit;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .bkgForm .btn-secondary:hover {
   background-color: #174cde;
+  scale: 1.02;
 }
 
 .bkgForm #recaptcha {
