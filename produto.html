@@ -33,9 +33,11 @@
         <nav class="navMenu">
 
             <!-- menu Hamburger -->
-            <button class="menuMobile menuMobileNoturno" onclick="toggleBar()"><i class="fa-solid fa-bars"></i></button>
+            <div class="menuMobile menuMobileNoturno">
+                <button onclick="toggleBar()"><i class="fa-solid fa-bars"></i></button>
+            </div>
             <ul class="navList">
-                <div class="x" id="x"><i class="fa-solid fa-xmark"></i></div>
+                <div class="x" id="x"><i class="fa-solid fa-xmark" onclick="toggleBar()"></i></div>
                 <li><a href="#">Home</a></li>
                 <p>Sobre-nós</p>
                 <li><a href="#">Informações da Empresa</a></li>
@@ -51,12 +53,12 @@
                     </button>
                 </div>
                 <div class="areaRestrita">
-                    <a href="restrito.html">Área Restrita</a>
+                    <a href="login.html">Área Restrita</a>
                 </div>
             </ul>
             <!-- fim menu Hamburger -->
 
-            <div class="logo"><img src="./img/logo-geral.png" alt=""></div>
+            <div class="logo"><a href="home.html"><img src="./img/logo-geral.png" alt=""></a></div>
 
             <div class="user">
                 <div class="dropdown">
@@ -85,6 +87,7 @@
 
     <!-- main -->
     <main>
+        <div class="x xNoturno modoEscuro"><i class="fa-solid fa-xmark"></i></div>
         <!-- carrossel -->
         <div class="carrossel">
             <div id="carouselExampleCaptions" class="carousel slide">
@@ -197,6 +200,12 @@
             <!-- fim comprou -->
         </div>
         <!-- fim texts -->
+
+        <!-- arrow -->
+        <div>
+            <img src="./img/img nav&Footer/arrow-up-circle-fill.svg" alt="" class="arrowTop" onclick="scrollArrowTop()">
+        </div>
+        <!-- fim arrow -->
     </main>
     <!-- fim main -->
 
@@ -221,7 +230,7 @@
             <a href="#">Chat</a>
         </div>
         <div class="container-footer4 boxFooter">
-            <img src="./img/logo-sem-letra.png" alt="">
+            <a href="home.html"><img class="logoFooter" src="./img/logo-sem-letra.png" alt=""></a>
         </div>
         <div class="container-footer5 boxFooter">
             <div class="tt">
@@ -234,7 +243,7 @@
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="buttonContato">
-                <button>Contato</button>
+                <a href="menu.html"><button>Contato</button></a>
             </div>
         </div>
     </footer>

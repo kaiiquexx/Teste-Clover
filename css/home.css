@@ -8,6 +8,10 @@ font-family: 'Montserrat', sans-serif; */
     transition: .3s;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 header .navMenu {
     margin-bottom: 10px;
 }
@@ -20,14 +24,19 @@ main .carrossel .carousel {
 
 main .cards {
     display: flex;
-    width: 480px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 1000px;
     gap: 10px;
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin: 10px auto;
+}
+
+main .cards::-webkit-scrollbar {
+    display: none;
 }
 
 main .cards .card .card-body {
-    height: 140px;
+    width: 770px;
 }
 
 main .cards .card:hover {
@@ -44,4 +53,10 @@ main .cards .card .card-body .card-title.meActive {
 
 main .cards .card .card-body .card-text.meActive {
     color: #f6f6f6;
+}
+
+@media screen and (min-width: 1280px) {
+    main .cards {
+        width: 1200px;
+    }
 }

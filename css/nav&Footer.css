@@ -28,8 +28,7 @@ header .navMenu button {
 }
 
 header .navMenu .menuMobile {
-    display: flex;
-    margin-top: 16px;
+    margin-top: 5px;
 }
 
 header .navMenu .menuMobile:hover {
@@ -109,11 +108,29 @@ header .navMenu .boxPesquisa button:hover {
 
 .navList .x {
     position: absolute;
-    left: 10px;
+    right: 25px;
     top: 15px;
     font-size: 40px;
     display: none;
     transition: none;
+}
+
+.navList .accordion{
+    display: flex;
+    flex-direction: column;
+    margin-left: -5px;
+    width: 75vw;
+}
+.navList .accordion-item{
+    background: none;
+    font-size: 15px;
+}
+.navList .accordion-header{
+    position: relative;
+    left: -70px;
+    top: 20px;
+    margin-top: -30px;
+    scale: 0.5;
 }
 
 .navList a {
@@ -132,8 +149,13 @@ header .navMenu .boxPesquisa button:hover {
 .navList p {
     text-transform: uppercase;
     margin-top: 15px;
+    font-weight: 100;
     margin-bottom: -1px;
     color: #f6f6f6;
+}
+
+.navList #pModoEscuro {
+    margin-left: 9px;
 }
 
 .navList .areaRestrita{
@@ -150,6 +172,7 @@ nav .navList .btnModoNoturno button {
     border-radius: 20px;
     border: 0;
     background-color: #717d96;
+    margin-left: 9px;
 }
 
 nav .navList .btnModoNoturno button span {
@@ -172,6 +195,17 @@ nav .navList .btnModoNoturno button.activeButton span {
 }
 /* fim btn modo noturno */
 /* fim menu Hamburger aberto */
+
+/* main */
+main .arrowTop{
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    scale: 2.4;
+    opacity: 0;
+    z-index: 4;
+}
+/* fim main */
 
 /* rodapé */
 footer {
@@ -205,6 +239,15 @@ footer .boxFooter {
     font-family: "Jost", sans-serif;
     font-weight: 400;
     color: #ffffff;
+}
+
+footer .container-footer4{
+   display: flex;
+   align-items: center;
+}
+
+footer .container-footer4 .logoFooter{
+    scale: 0.7;
 }
 
 footer .container-footer5 {
@@ -241,7 +284,7 @@ header .navMenu.meActive {
     background-color: #a30e71;
 }
 
-header .navMenu .menuMobile.meActive {
+header .navMenu .fa-bars.meActive {
     color: #f6f6f6;
 }
 
@@ -253,6 +296,12 @@ header .navMenu .boxPesquisa .pesquisaNoturno.meActive {
     background-color: #1db100;
 }
 /* fim header */
+
+/* main */
+main .arrowTop.meActive{
+    color: #f6f6f6;
+}
+/* fim main */
 
 /* rodapé */
 footer.meActive {
@@ -397,6 +446,17 @@ footer.meActive {
         font-size: 30px;
     }
 
+    .navList .accordion{
+        margin-left: -15px;
+    }
+    .navList .accordion-item{
+        font-size: 25px;
+    }
+    .navList .accordion-header{
+        left: -105px;
+        scale: 0.6;
+    }    
+
     /* btn modo noturno */
     nav .navList .btnModoNoturno button {
         width: 80px;
@@ -415,6 +475,13 @@ footer.meActive {
     }
     /* fim btn modo noturno */
     /* fim menu Hamburger aberto */
+    /* main */
+    main .arrowTop{
+        right: 60px;
+        bottom: 50px;
+        scale: 4;
+    }
+    /* fim main */
 }
 
 @media screen and (min-width: 1280px) {
@@ -485,6 +552,17 @@ footer.meActive {
         font-size: 60px;
     }
 
+    .navList .accordion{
+        margin-left: -15px;
+    }
+    .navList .accordion-item{
+        font-size: 25px;
+    }
+    .navList .accordion-header{
+        left: -175px;
+        scale: 0.6;
+    }    
+
     /* btn modo noturno */
     nav .navList .btnModoNoturno button {
         width: 90px;
@@ -503,6 +581,15 @@ footer.meActive {
     }
     /* fim btn modo noturno */
     /* fim menu Hamburger aberto */
+
+    /* main */
+    main .arrowTop{
+        right: 80px;
+        bottom: 50px;
+        scale: 4.4;
+        z-index: 4;
+    }
+    /* fim main */
 
     /* rodapé */
     footer {

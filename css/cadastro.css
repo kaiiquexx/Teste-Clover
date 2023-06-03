@@ -265,6 +265,18 @@ body {
     width: 358px;
     height: 41px;
   }
+
+  .bkgForm .eye{
+    right: 60px;
+    margin-top: -28px;
+    scale: 1.3;
+  }
+
+  .bkgForm .eye2{
+    right: 60px;
+    margin-top: -28px;
+    scale: 1.3;
+  }
   
   .bkgForm .labelLeft{
     margin-left: 46px;

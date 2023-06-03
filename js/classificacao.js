@@ -439,3 +439,11 @@ starBlack10.addEventListener("click", () =>{
 // fim box10
 // fim star
 // fim boxs
+
+// voltar
+
+let back = document.querySelector(".xNoturno");
+
+back.addEventListener("click", () =>{
+    window.history.back();
+})

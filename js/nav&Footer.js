@@ -7,21 +7,19 @@ function toggleBar() {
 
     if (toggleBar.className === "navList") {
         toggleBar.classList.add("active");
-        toggleBar.style.zIndex = "4";
-        menuMobile.style.zIndex = "5";
+        toggleBar.style.zIndex = "3";
+        menuMobile.style.zIndex = "2";
         x.style.display = "block";
         document.body.style.overflow = "hidden";
-        menuMobile.style.opacity = "0";
         pesquisa.style.zIndex = "0";
     }
     else {
         toggleBar.classList.remove("active");
-        toggleBar.style.zIndex = "4";
-        menuMobile.style.zIndex = "1";
+        toggleBar.style.zIndex = "2";
+        menuMobile.style.zIndex = "3";
         x.style.display = "inherit"
         document.body.style.overflow = "inherit";
-        menuMobile.style.opacity = "1";
-        pesquisa.style.zIndex = "5";
+        pesquisa.style.zIndex = "4";
     }
 }
 // fim barraHambuerger
@@ -30,17 +28,41 @@ function toggleBar() {
 let btn = document.querySelector("#btn");
 let body = document.querySelector("body");
 let navMenu = document.querySelector(".navMenu");
-let menuMobile = document.querySelector(".menuMobileNoturno");
+let menuMobile = document.querySelector(".fa-bars");
 let user = document.querySelector(".userNoturno");
 let pesquisa = document.querySelector(".pesquisaNoturno");
+let arrow = document.querySelector(".arrowTop");
 let footer = document.querySelector("footer");
 
-btn.addEventListener("click", () =>{
+btn.addEventListener("click", () => {
     btn.classList.toggle("activeButton");
     body.classList.toggle("meActive");
     navMenu.classList.toggle("meActive");
     menuMobile.classList.toggle("meActive");
     user.classList.toggle("meActive");
     pesquisa.classList.toggle("meActive");
+    arrow.classList.toggle("meActive");
     footer.classList.toggle("meActive");
 })
+
+// return
+function scrollArrowTop() {
+
+    if (scrollY > 250) {
+        arrow.style.opacity ="1";
+        arrow.style.transition =".5s";
+        arrow.addEventListener("click", () =>{
+            window.scrollTo({
+                top:0,
+                left:0,
+                behavior: "smooth"
+            });
+        })
+    }
+    else {
+        arrow.style.opacity ="0";
+        arrow.style.transition =".5s";
+    }
+
+}
+window.addEventListener('scroll', scrollArrowTop);

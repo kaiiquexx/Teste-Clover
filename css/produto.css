@@ -18,6 +18,16 @@ header .navMenu {
 /* fim header */
 
 /* main */
+main .xNoturno {
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+main .fa-xmark{
+    cursor: pointer;
+}
+
 main .carrossel .carousel {
     width: 95vw;
     margin: 0 auto;
@@ -37,6 +47,7 @@ main .nameAndClassific{
 
 main .nameAndClassific .fa-heart{
     transform: scale(1.8);
+    cursor: pointer;
 }
 
 main .line{

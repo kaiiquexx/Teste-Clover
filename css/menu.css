@@ -84,7 +84,12 @@ main form .btn-success {
   background-color: #198754;
   text-transform: uppercase;
   font-size: 17px;
+  font-weight: 600;
   margin-bottom: 20px;
+  transition: .2s;
+}
+main form .btn-success:hover {
+  scale: 1.05;
 }
 
 @media screen and (min-width: 600px) {
@@ -143,6 +148,7 @@ main form .btn-success {
 
   body{
     height: 100vh;
+    overflow: hidden;
   }
 }
 
@@ -150,6 +156,7 @@ main form .btn-success {
 
     body {
       height: 100vh;
+      overflow: hidden;
     }
 
     header {
@@ -195,6 +202,7 @@ main form .btn-success {
 
     body {
       height: 100%;
+      overflow: auto;
     }
   }
 

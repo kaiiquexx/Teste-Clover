@@ -17,7 +17,9 @@ body {
 /* text main */
 main .x {
   font-size: 40px;
+  margin-top: 10px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 main .texts {
@@ -576,7 +578,7 @@ body.meActive {
 }
 
 /* main */
-main .x.meActive {
+main .xNoturno.meActive {
   color: #f6f6f6;
 }
 

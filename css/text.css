@@ -7,6 +7,10 @@ font-family: 'Montserrat', sans-serif; */
     box-sizing: border-box;
 }
 
+body{
+    transition: .3s;
+}
+
 header .tittle {
     font-family: 'Jost', sans-serif;
     font-weight: 700;
@@ -17,10 +21,13 @@ header .tittle {
 }
 
 header .xNoturno {
-    font-size: 45px;
-    cursor: pointer;
+    font-size: 40px;
     margin-left: 10px;
     margin-bottom: -40px;
+}
+
+header .fa-xmark{
+    cursor: pointer;
 }
 
 main .text {
@@ -63,7 +70,6 @@ main .question .btns {
     line-height: 16px;
     text-transform: uppercase;
     color: #DD2E82;
-
 }
 
 main .question .btns .yes {
