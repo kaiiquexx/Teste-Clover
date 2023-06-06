@@ -1,0 +1,268 @@
+/* font-family: 'Jost', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+* {
+    padding: 0;
+    bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+header .x {
+    font-size: 40px;
+    margin: 0 0 -10px 10px;
+}
+
+header .fa-xmark{
+    cursor: pointer;
+}
+
+header .title {
+    font-size: 20px;
+    margin: 15px 10px;
+    font-family: 'Jost', sans-serif;
+}
+
+header .text {
+    font-size: 15px;
+    margin: 10px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .translate {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+main .photo {
+    display: flex;
+    justify-content: center;
+}
+
+main .me {
+    width: 50vw;
+    border-radius: 10px;
+    border: 3px solid rgb(74, 115, 150);
+}
+
+main .me:hover {
+    scale: 1.02;
+}
+
+main .socials {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 60px;
+    color: #000;
+    background-color: rgb(74, 115, 150);
+}
+
+main .socials img {
+    scale: 1.5;
+}
+
+main .socials img:hover {
+    scale: 1.7;
+}
+
+/* instagram */
+main .instagram {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Jost', sans-serif;
+}
+
+main .instagram a {
+    color: inherit;
+}
+
+main .instagram .name {
+    display: none;
+}
+
+main .instagram:hover .name {
+    animation: go-back 1s;
+    display: block;
+}
+
+/* fim instagram */
+
+/* linkedin */
+main .linkedin a {
+    color: inherit;
+}
+
+main .linkedin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Jost', sans-serif;
+}
+
+main .linkedin .name {
+    display: none;
+}
+
+main .linkedin:hover .name {
+    animation: go-back 1s;
+    display: block;
+}
+
+/* fim linkedin */
+
+/* github */
+main .github a {
+    color: inherit;
+}
+
+main .github {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Jost', sans-serif;
+}
+
+main .github .name {
+    display: none;
+}
+
+main .github:hover .name {
+    animation: go-back 1s;
+    display: block;
+}
+
+/* fim github */
+
+@keyframes go-back {
+    from {
+        transform: translateX(-35px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width:800px) {
+    header .x {
+        font-size: 50px;
+        margin: 5px 0 -10px 15px;
+    }
+    
+    header .title {
+        font-size: 40px;
+        margin: 15px 15px;
+    }
+    
+    header .text {
+        font-size: 26.5px;
+        margin: 15px;
+    }
+    
+    header .translate {
+        top: 20px;
+        right: 20px;
+    }
+    
+    main .socials {
+        height: 70px;
+        margin-top: 10px;
+        gap: 80px;
+    }
+    
+    main .socials img {
+        scale: 1.9;
+    }
+    
+    main .socials img:hover {
+        scale: 2.2;
+    }
+    
+    /* instagram */
+    main .instagram {
+        gap: 15px;
+        font-size: 20px;
+    }
+    /* fim instagram */
+    
+    /* linkedin */
+    
+    main .linkedin {
+        gap: 15px;
+        font-size: 20px;
+    }
+    
+    /* fim linkedin */
+    
+    /* github */
+    main .github {
+        gap: 15px;
+        font-size: 20px;
+    }
+    /* fim github */
+}
+
+@media screen and (min-width:1280px) {
+    header .x {
+        font-size: 60px;
+        margin: 10px 0 -10px 20px;
+    }
+    
+    header .title {
+        font-size: 40px;
+        margin: 20px 20px;
+    }
+    
+    header .text {
+        font-size: 26.5px;
+        margin: 20px;
+    }
+    
+    header .translate {
+        top: 25px;
+        right: 25px;
+    }
+    
+    main .socials {
+        height: 80px;
+        gap: 150px;
+    }
+    
+    main .socials img {
+        scale: 3;
+    }
+    
+    main .socials img:hover {
+        scale: 3.2;
+    }
+    
+    /* instagram */
+    main .instagram {
+        gap: 25px;
+        font-size: 30px;
+    }
+    /* fim instagram */
+    
+    /* linkedin */
+    
+    main .linkedin {
+        gap: 25px;
+        font-size: 30px;
+    }
+    
+    /* fim linkedin */
+    
+    /* github */
+    main .github {
+        gap: 25px;
+        font-size: 30px;
+    }
+    /* fim github */
+}

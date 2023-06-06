@@ -33,29 +33,93 @@
     <header>
         <nav class="navMenu">
 
-            <!-- menu Hamburger -->
+           <!-- menu Hamburger -->
             <div class="menuMobile menuMobileNoturno">
                 <button onclick="toggleBar()"><i class="fa-solid fa-bars"></i></button>
             </div>
             <ul class="navList">
+                <!-- xBack -->
                 <div class="x" id="x"><i class="fa-solid fa-xmark" onclick="toggleBar()"></i></div>
-                <li><a href="#">Home</a></li>
-                <p>Sobre-nós</p>
-                <li><a href="#">Informações da Empresa</a></li>
-                <li><a href="#">Quem somos?</a></li>
-                <li><a href="#">Blog</a></li>
-                <p>Suporte</p>
-                <li><a href="#">Telefones</a></li>
-                <li><a href="#">Chat</a></li>
-                <p>Modo Escuro</p>
+                <!-- fix xBack -->
+
+                <!-- itens -->
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- box1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <p>Sobre-nós</p>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <li><a href="quemSou.html">Quem somos?</a></li>
+                                <li><a href="atualizacao.html">Informações da Empresa</a></li>
+                                <li><a href="atualizacao.html">Blog</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fim box1 -->
+
+                    <!-- box2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <p>Suporte</p>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <li><a href="./menu.html">Contato</a></li>
+                                <li><a href="atualizacao.html">Telefones</a></li>
+                                <li><a href="atualizacao.html">Chat</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fim box2 -->
+
+                    <!-- box3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                <p>Novidades</p>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <li><a href="atualizacao.html">O que está vindo?</a></li>
+                                <li><a href="atualizacao.html">Fique por dentro</a></li>
+                                <li><a href="atualizacao.html">Sugestões</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fim box3 -->
+                </div>
+                <!-- fim itens -->
+
+                <!-- btn escuro -->
+                <p id="pModoEscuro">Modo Escuro</p>
                 <div class="btnModoNoturno">
                     <button type="button" id="btn">
                         <span></span>
                     </button>
                 </div>
+                <!-- fim btn escuro -->
+
+                <!-- area restrita -->
                 <div class="areaRestrita">
                     <a href="login.html">Área Restrita</a>
                 </div>
+                <!-- fim area restrita -->
             </ul>
             <!-- fim menu Hamburger -->
 
@@ -495,21 +559,21 @@
     <footer>
         <div class="container-footer1 boxFooter">
             <h5>Início</h5>
-            <a href="#">Home</a>
-            <a href="#">Portifolio</a>
-            <a href="#">Associados</a>
+            <a href="home.html">Home</a>
+            <a href="https://github.com/kaiiquexx">Portifolio</a>
+            <a href="atualizacao.html">Associados</a>
         </div>
         <div class="container-footer2 boxFooter">
             <h5>Sobre-nós</h5>
-            <a href="#">Informações da Empresa</a>
-            <a href="#">Quem somos?</a>
-            <a href="#">Blog</a>
+            <a href="quemSou.html">Quem somos?</a>
+            <a href="atualizacao.html">Informações da Empresa</a>
+            <a href="atualizacao.html">Blog</a>
         </div>
         <div class="container-footer3 boxFooter">
             <h5>Suporte</h5>
-            <a href="#">FAQ</a>
-            <a href="#">Telefones</a>
-            <a href="#">Chat</a>
+            <a href="atualizacao.html">FAQ</a>
+            <a href="atualizacao.html">Telefones</a>
+            <a href="atualizacao.html">Chat</a>
         </div>
         <div class="container-footer4 boxFooter">
             <a href="home.html"><img class="logoFooter" src="./img/logo-sem-letra.png" alt=""></a>

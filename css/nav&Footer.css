@@ -121,10 +121,16 @@ header .navMenu .boxPesquisa button:hover {
     margin-left: -5px;
     width: 75vw;
 }
+
 .navList .accordion-item{
     background: none;
     font-size: 15px;
 }
+
+.navList .accordion-button:focus{
+    background: none;
+}
+
 .navList .accordion-header{
     position: relative;
     left: -70px;
@@ -279,6 +285,7 @@ footer .container-footer5 button {
 body.meActive {
     background-color: rgb(37, 42, 47);
 }
+
 /* header */
 header .navMenu.meActive {
     background-color: #a30e71;

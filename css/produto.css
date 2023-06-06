@@ -137,6 +137,10 @@ main .avaliacao{
 /* fim main */
 
 /* modo escuro */
+main .xNoturno.meActive{
+    color: #f6f6f6;
+}
+
 main .nameAndClassific.meActive{
     color: #f6f6f6;
 }

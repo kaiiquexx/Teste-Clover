@@ -40,7 +40,7 @@ main .cards .card .card-body {
 }
 
 main .cards .card:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 main .cards .card .card-body.meActive {

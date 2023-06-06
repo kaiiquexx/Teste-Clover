@@ -61,6 +61,7 @@ main .question p {
 main .question .btns {
     display: flex;
     gap: 20px;
+    width: 30vw;
     margin-bottom: 20px;
 
     font-family: 'Montserrat', sans-serif;
@@ -82,6 +83,7 @@ main .question .btns .yes {
     border-radius: 16px;
     filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.3));
     cursor: pointer;
+    transition: .3s;
 }
 
 main .question .btns .yes:hover {
@@ -99,11 +101,33 @@ main .question .btns .no {
     border-radius: 16px;
     filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.3));
     cursor: pointer;
+    transition: .3s;
 }
 
 main .question .btns .no:hover {
     background-color: #E14891;
     color: #fff;
+}
+
+main .question .clickYes{
+    width: 50vw;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    z-index: 6;
+    display: none;
+    position: fixed;
+    text-align: center;
+    border-radius: 16px;
+    color: #fff;
+    background-color: #DD2E81;
+    font-family: 'Jost', sans-serif;
+    transition: .8s;
+}
+
+main .question .clickYes.click{
+    display: block;
+    transition: .8s;
 }
 
 /* modo escuro */
@@ -166,6 +190,7 @@ main .question p.meActive{
         gap: 20px;
         margin-bottom: 20px;
         font-size: 20px;
+        width: 30vw;
     }
 
     main .question .btns .yes {
@@ -176,6 +201,13 @@ main .question p.meActive{
     main .question .btns .no {
         width: 95px;
         height: 45px;
+    }
+
+    main .question .clickYes{
+        width: 32vw;
+        height: 40px;
+        padding-top: 5px;
+        font-size: 20px;
     }
 }
 
@@ -224,6 +256,12 @@ main .question p.meActive{
     main .question .btns .no {
         width: 130px;
         height: 60px;
+    }
+
+    main .question .clickYes{
+        width: 30vw;
+        height: 45px;
+        font-size: 27px;
     }
 }
 
