@@ -113,6 +113,7 @@ header .navMenu .boxPesquisa button:hover {
     font-size: 40px;
     display: none;
     transition: none;
+    cursor: pointer;
 }
 
 .navList .accordion{
