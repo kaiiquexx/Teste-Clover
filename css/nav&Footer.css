@@ -117,8 +117,6 @@ header .navMenu .boxPesquisa button:hover {
 }
 
 .navList .accordion{
-    display: flex;
-    flex-direction: column;
     margin-left: -5px;
     width: 75vw;
 }
@@ -126,6 +124,11 @@ header .navMenu .boxPesquisa button:hover {
 .navList .accordion-item{
     background: none;
     font-size: 15px;
+    border: none;
+}
+
+.navList .accordion-button {
+    background-color: transparent !important;
 }
 
 .navList .accordion-button:focus{
@@ -211,6 +214,7 @@ main .arrowTop{
     scale: 2.4;
     opacity: 0;
     z-index: 4;
+    cursor: pointer;
 }
 /* fim main */
 
@@ -562,12 +566,15 @@ footer.meActive {
 
     .navList .accordion{
         margin-left: -15px;
+        width: 65vw;
     }
+
     .navList .accordion-item{
         font-size: 25px;
     }
+    
     .navList .accordion-header{
-        left: -175px;
+        left: -150px;
         scale: 0.6;
     }    
 
@@ -625,4 +632,10 @@ footer.meActive {
         font-size: 50px;
     }
     /* fim rodapé */
+}
+
+@media screen and (min-width: 1440px) {
+    .navList .accordion-header{
+        left: -235px;
+    }    
 }

@@ -9,7 +9,7 @@ font-family: 'Lobster', cursive; */
 
 body {
   background: #90f5cb;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .logo {

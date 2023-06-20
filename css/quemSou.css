@@ -30,6 +30,30 @@ header .text {
     font-family: 'Montserrat', sans-serif;
 }
 
+header .title.en {
+    display: none;
+}
+
+header .text.en {
+    display: none;
+}
+
+header .titleEnglish {
+    display: none;
+}
+
+header .textEnglish {
+    display: none;
+}
+
+header .titleEnglish.en {
+    display: block;
+}
+
+header .textEnglish.en {
+    display: block;
+}
+
 header .translate {
     position: absolute;
     top: 15px;
